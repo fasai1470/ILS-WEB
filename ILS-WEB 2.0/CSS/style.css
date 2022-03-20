@@ -72,13 +72,13 @@ h1 {
 /*-- Lifestyleintro ตกแต่งหัวข้อ------------------------------------*/
 
 .intro {
-  min-height: 10rem;
+  min-height: 30rem;
   position: relative;
   display: table;
   width: 100%;
   height: auto;
   padding-top: 8rem;
-  padding-bottom: 0rem;
+  padding-bottom: 8rem;
 	background: #faf1f0;
   /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
   background-position: center center;
@@ -152,6 +152,10 @@ h1 {
   padding: 0rem;
 	
 }
+@media (min-width: 992px) {
+  .QA {
+    height: 20vh;
+  }
 
 /*--slide ตกแต่งสไลด์QA--------------------------------------*/
 
@@ -183,7 +187,7 @@ h1 {
 }
 .slideQA h3, .slideQA .h3 {
   font-size: 2.5rem;
-	color: #ff831e;
+	color: #000000;
   margin: 0;
   padding: 0;
 }
@@ -413,10 +417,10 @@ h1 {
     height: 100vh;
   }
   .slidejob1 h1, .slidejob1 .h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 	.slidejob1 h2, .slidejob1 .h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 	.slidejob1 h3, .slidejob1 .h3 {
     color: #000000
@@ -428,38 +432,6 @@ h1 {
   padding-top: 0rem;
 }
 }
-
-/*สไลด์อาชีพ2 */
-.slidejob2 {
-  min-height: 25rem; 	/* ความสูงสไลด์ */
-  position: relative;
-  display: table;
-  width: 100%;
-  height: auto;
-  padding-top: 0rem; 	/* ระยะห่างขอบจากบน */
-  padding-bottom: 4rem; /* ระยะห่างขอบจากล่าง */
-  background: #faf1f0;	/* สีพื้นหลัง */
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* หัวเรื่อง1 ภายในสไลด์อาชีพ2 */
-.slidejob2 h2, .slidejob .h2 {
-  font-size: 1.5rem;
-	/*color: #7cc4cb;*/
-  margin: 0;
-  padding: 0;
-}
-
-/* พารากราฟ ภายในสไลด์อาชีพ2 */
-.slidejob2 p, .slidejob .p {
-  font-size: 1.2rem;
-  margin: 0;
-  padding: 0;
-}
-
 
 
 .intro3 {
