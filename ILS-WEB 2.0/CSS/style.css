@@ -85,51 +85,73 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.intro h1, .intro .h1 {
-  font-size: 4rem;
-	color: #7cc4cb;
-  margin: 0;
-  padding: 0;
-}
-.intro h2, .intro .h2 {
-  font-size: 2rem;
-	color: #7cc4cb;
-  margin: 0;
-  padding: 0;
-}
-.intro h3, .intro .h3 {
-  font-size: 2rem;
-	color: #7cc4cb;
-  margin: 0;
-  padding: 0;
-}
-.intro p {
-	font-size: 1.5rem;
-	font-family: 'Prompt', sans-serif;
-  margin: 0;
-  padding-top: 0rem;
-}
-@media (min-width: 992px) {
+/*--XL-------------------*/
+@media (min-width: 1200px) {
   .intro {
-    height: 100vh;
+    height: 50vh;
   }
   .intro h1, .intro .h1 {
     font-size: 7.5rem;
   }
-	.intro h2, .intro .h2 {
-    font-size: 6.5rem;
+	.intro p {
+	font-size: 1.5rem;
+  font-family: 'Prompt', sans-serif;
+}
+/*--LG-------------------*/
+}@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .intro {
+    height: 50vh;
   }
-	.intro h3, .intro .h3 {
-    font-size: 3.5rem;
+  .intro h1, .intro .h1 {
+    font-size: 7.5rem;
   }
 	.intro p {
-	font-size: 2.2rem;
-  margin: 0;
-  padding-top: 0rem;
+	font-size: 1.5rem;
+  font-family: 'Prompt', sans-serif;
+}
+}
+/*--MD-------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .intro {
+    height: 50vh;
+  }
+  .intro h1, .intro .h1 {
+    font-size: 6rem;
+  }
+	.intro p {
+	font-size: 2rem;
+  font-family: 'Prompt', sans-serif;
+
+}
+}
+/*--SM-------------------*/
+@media only screen and (min-width: 576px) and (max-width: 767px){
+  .intro {
+    height: 50vh;
+  }
+  .intro h1, .intro .h1 {
+    font-size: 4rem;
+  }
+	.intro p {
+	font-size: 1.5rem;
+  font-family: 'Prompt', sans-serif;
+}
+}
+/*--XS-------------------*/
+@media only screen and (max-width: 575px){
+  .intro {
+    height: 50vh;
+  }
+  .intro h1, .intro .h1 {
+    font-size: 4rem;
+  }
+	.intro p {
+	font-size: 1.2rem;
+  font-family: 'Prompt', sans-serif;
 }
 }
 
-
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
 .QA {
   min-height: 10rem;
   position: relative;
@@ -147,10 +169,8 @@ h1 {
 
 /* หัวเรื่อง1 ภายในสไลด์ไลฟ์สไตล์ */
 .QA h1 {
-	font-size: 80px;
+	font-size: 100px;
 	color: #7cc4cb;
-  margin-top: -2rem;
-  padding: 0rem;
 	
 }
 @media (min-width: 992px) {
@@ -158,7 +178,58 @@ h1 {
     height: 20vh;
   }
 
-/*--slide ตกแต่งสไลด์QA--------------------------------------*/
+  /*--XL-------------------*/
+@media (min-width: 1200px) {
+  .QA {
+    height: 20vh;
+  }
+  .QA h1 {
+    font-size: 100px;
+    color: #7cc4cb;
+  }
+}
+/*--LG-------------------*/
+}@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .QA {
+    height: 20vh;
+  }
+  .QA h1 {
+    font-size: 100px;
+    color: #7cc4cb;
+  }
+}
+/*--MD-------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .QA {
+    height: 20vh;
+  }
+  .QA h1 {
+    font-size: 100px;
+    color: #7cc4cb;
+  }
+}
+/*--SM-------------------*/
+@media only screen and (min-width: 576px) and (max-width: 767px){
+  .QA {
+    height: 20vh;
+  }
+  .QA h1 {
+    font-size: 80px;
+    color: #7cc4cb;
+  }
+}
+/*--XS-------------------*/
+@media only screen and (max-width: 575px){
+  .QA {
+    height: 20vh;
+  }
+  .QA h1 {
+    font-size: 80px;
+    color: #7cc4cb;
+  }
+}
+
+/*--slide ตกแต่งสไลด์QA------------------------------------------------------------------------------------------------------------------*/
 
 .slideQA {
   min-height: 30rem;
@@ -174,67 +245,94 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.slideQA h1, .slideQA .h1 {
-  font-size: 4.5rem;
-	color: #7cc4cb;
-  margin: 0;
-  padding: 0;
-}
-.slideQA h2, .slideQA .h2 {
-  font-size: 3.5rem;
-	color: #6e6149;
-  margin: 0;
-  padding: 0;
-}
-.slideQA h3, .slideQA .h3 {
-  font-size: 2.5rem;
-	color: #000000;
-  margin: 0;
-  padding: 0;
-	font-family: 'Prompt', sans-serif;
-}
-.slideQA h4, .slideQA .h4 {
-  font-size: 2.5rem;
-	color: #3e82ff;
-  margin: 0;
-  padding: 0;
-	font-family: 'Prompt', sans-serif;
-}
-.slideQA p {
-	font-size: 1.5rem;
-  margin: 0;
-  padding-top: 0rem;
-}
-@media (min-width: 992px) {
+/*--XL-------------------*/
+@media (min-width: 1200px) {
   .slideQA {
     height: 100vh;
   }
-  .slideQA h1, .slideQA .h1 {
-    font-size: 5.5rem;
-  }
-	.slideQA h2, .slideQA .h2 {
-    font-size: 4.5rem;
-  }
-	.slideQA h3, .slideQA .h3 {
-    font-size: 3rem;
+  .slideQA h3, .slideQA .h3 {
+    font-size: 2rem;
+    color: #000000;
+    font-family: 'Prompt', sans-serif;
   }
   .slideQA h4, .slideQA .h4 {
-    font-size: 3rem;
+    font-size: 2rem;
+    color: #ff9100;
+    font-family: 'Prompt', sans-serif;
   }
-	.slideQA p {
-	font-size: 2rem;
-  margin: 0;
-  padding-top: 0rem;
 }
+/*--LG-------------------*/
+}@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .slideQA {
+    height: 100vh;
+  }
+  .slideQA h3, .slideQA .h3 {
+    font-size: 2rem;
+    color: #000000;
+    font-family: 'Prompt', sans-serif;
+  }
+  .slideQA h4, .slideQA .h4 {
+    font-size: 2rem;
+    color: #ff9100;
+    font-family: 'Prompt', sans-serif;
+  }
 }
-
+/*--MD-------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .slideQA {
+    height: 100vh;
+  }
+  .slideQA h3, .slideQA .h3 {
+    font-size: 2.5rem;
+    color: #000000;
+    font-family: 'Prompt', sans-serif;
+  }
+  .slideQA h4, .slideQA .h4 {
+    font-size: 2.5rem;
+    color: #3e82ff;
+    font-family: 'Prompt', sans-serif;
+  }
+}
+/*--SM-------------------*/
+@media only screen and (min-width: 576px) and (max-width: 767px){
+  .slideQA {
+    height: 100vh;
+  }
+  .slideQA h3, .slideQA .h3 {
+    font-size: 1.5rem;
+    color: #000000;
+    font-family: 'Prompt', sans-serif;
+  }
+  .slideQA h4, .slideQA .h4 {
+    font-size: 1.5rem;
+    color: #3e82ff;
+    font-family: 'Prompt', sans-serif;
+  }
+}
+/*--XS-------------------*/
+@media only screen and (max-width: 575px){
+  .slideQA {
+    height: 100vh;
+  }
+  .slideQA h3, .slideQA .h3 {
+    font-size: 1.5rem;
+    color: #000000;
+    font-family: 'Prompt', sans-serif;
+  }
+  .slideQA h4, .slideQA .h4 {
+    font-size: 1.5rem;
+    color: #3e82ff;
+    font-family: 'Prompt', sans-serif;
+  }
+}
+/*--Scholarship----------------------------------------------------------------------------------------------------------*/
 .intro2 {
   min-height: 20rem;
   position: relative;
   display: table;
   width: 100%;
   height: auto;
-  padding-top: 8rem;
+  padding-top: 10rem;
   padding-bottom: 4rem;
 	background: #faf1f0;
   /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
@@ -242,47 +340,69 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.intro2 h1, .intro2 .h1 {
-  font-size: 4rem;
-	color: #7cc4cb;
-  margin: 0;
-  padding: 0;
-}
-.intro2 h2, .intro2 .h2 {
-  font-size: 2rem;
-	color: #7cc4cb;
-  margin: 0;
-  padding: 0;
-}
-.intro2 h3, .intro2 .h3 {
-  font-size: 2rem;
-	color: #7cc4cb;
-  margin: 0;
-  padding: 0;
-}
-.intro2 p {
-	font-size: 1.5rem;
-font-family: 'Prompt', sans-serif;
-  margin: 0;
-  padding-top: 0rem;
-}
-@media (min-width: 992px) {
+/*--XL-------------------*/
+@media (min-width: 1200px) {
   .intro2 {
     height: 50vh;
   }
   .intro2 h1, .intro2 .h1 {
     font-size: 7.5rem;
   }
-	.intro2 h2, .intro2 .h2 {
-    font-size: 6.5rem;
+	.intro2 p {
+	font-size: 1.5rem;
+  font-family: 'Prompt', sans-serif;
+}
+/*--LG-------------------*/
+}@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .intro2 {
+    height: 50vh;
   }
-	.intro2 h3, .intro2 .h3 {
-    font-size: 3.5rem;
+  .intro2 h1, .intro2 .h1 {
+    font-size: 7.5rem;
+  }
+	.intro2 p {
+	font-size: 1.5rem;
+  font-family: 'Prompt', sans-serif;
+}
+}
+/*--MD-------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .intro2 {
+    height: 50h;
+  }
+  .intro2 h1, .intro2 .h1 {
+    font-size: 8rem;
   }
 	.intro2 p {
 	font-size: 2rem;
-  margin: 0;
-  padding-top: 0rem;
+  font-family: 'Prompt', sans-serif;
+
+}
+}
+/*--SM-------------------*/
+@media only screen and (min-width: 576px) and (max-width: 767px){
+  .intro2 {
+    height: 50vh;
+  }
+  .intro2 h1, .intro2 .h1 {
+    font-size: 4rem;
+  }
+	.intro2 p {
+	font-size: 1.5rem;
+  font-family: 'Prompt', sans-serif;
+}
+}
+/*--XS-------------------*/
+@media only screen and (max-width: 575px){
+  .intro2 {
+    height: 50vh;
+  }
+  .intro2 h1, .intro2 .h1 {
+    font-size: 4rem;
+  }
+	.intro2 p {
+	font-size: 1.2rem;
+  font-family: 'Prompt', sans-serif;
 }
 }
 
@@ -389,7 +509,7 @@ font-family: 'Prompt', sans-serif;
   padding-top: 10rem; 	/* ระยะห่างขอบจากบน */
   padding-bottom: 4rem; /* ระยะห่างขอบจากล่าง */
   background: #faf1f0;	/* สีพื้นหลัง */
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+  /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);*/
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -439,13 +559,13 @@ font-family: 'Prompt', sans-serif;
 
 
 .intro3 {
-  min-height: 0rem;
+  min-height: 20rem;
   position: relative;
   display: table;
   width: 100%;
   height: auto;
   padding-top: 8rem;
-  padding-bottom: 0rem;
+  padding-bottom: 8rem;
 	background: #faf1f0;
   /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
   background-position: center center;
