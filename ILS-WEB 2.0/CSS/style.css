@@ -85,44 +85,72 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.intro h1, .intro .h1 {
-  font-size: 4rem;
-	color: #7cc4cb;
-  margin: 0;
-  padding: 0;
-}
-.intro h2, .intro .h2 {
-  font-size: 2rem;
-	color: #7cc4cb;
-  margin: 0;
-  padding: 0;
-}
-.intro h3, .intro .h3 {
-  font-size: 2rem;
-	color: #7cc4cb;
-  margin: 0;
-  padding: 0;
-}
-.intro p {
-	font-size: 1.5rem;
+
+@media (min-width: 1200px)
+{
+  .intro {
+    height: 100vh;
+  }
+  .intro h1, .intro .h1 {
+    font-size: 7rem;
+  }
+	.intro p {
+	font-size: 2rem;
   margin: 0;
   padding-top: 0rem;
 }
-@media (min-width: 992px) {
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
   .intro {
     height: 100vh;
   }
   .intro h1, .intro .h1 {
     font-size: 7.5rem;
   }
-	.intro h2, .intro .h2 {
-    font-size: 6.5rem;
+	.intro p {
+	font-size: 4rem;
+  margin: 0;
+  padding-top: 0rem;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .intro {
+    height: 100vh;
   }
-	.intro h3, .intro .h3 {
-    font-size: 3.5rem;
+  .intro h1, .intro .h1 {
+    font-size: 7.5rem;
   }
 	.intro p {
 	font-size: 2.2rem;
+  margin: 0;
+  padding-top: 0rem;
+}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+  .intro {
+    height: 100vh;
+  }
+  .intro h1, .intro .h1 {
+    font-size: 3.5rem;
+  }
+	.intro p {
+	font-size: 1.5rem;
+  margin: 0;
+  padding-top: 0rem;
+}
+}
+
+@media only screen and (max-width: 575px){
+  .intro {
+    height: 100vh;
+  }
+  .intro h1, .intro .h1 {
+    font-size: 3.5rem;
+  }
+	.intro p {
+	font-size: 1.5rem;
   margin: 0;
   padding-top: 0rem;
 }
@@ -146,7 +174,7 @@ h1 {
 
 /* หัวเรื่อง1 ภายในสไลด์ไลฟ์สไตล์ */
 .QA h1 {
-	font-size: 80px;
+	font-size: 100px;
 	color: #7cc4cb;
   margin-top: -2rem;
   padding: 0rem;
@@ -173,57 +201,76 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.slideQA h1, .slideQA .h1 {
-  font-size: 4.5rem;
-	color: #7cc4cb;
-  margin: 0;
-  padding: 0;
-}
-.slideQA h2, .slideQA .h2 {
-  font-size: 3.5rem;
-	color: #6e6149;
-  margin: 0;
-  padding: 0;
-}
-.slideQA h3, .slideQA .h3 {
-  font-size: 2.5rem;
-	color: #000000;
-  margin: 0;
-  padding: 0;
-}
-.slideQA h4, .slideQA .h4 {
-  font-size: 2.5rem;
-	color: #3e82ff;
-  margin: 0;
-  padding: 0;
-}
-.slideQA p {
-	font-size: 1.5rem;
+@media (min-width: 1200px)
+{
+  .slideQA {
+    height: 10vh;
+  }
+  .slideQA h3, .slideQA .h3 {
+    font-size: 3rem;
+  }
+	.slideQA h4 {
+	font-size: 3rem;
   margin: 0;
   padding-top: 0rem;
 }
-@media (min-width: 992px) {
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .intro {
+    height: 100vh;
+  }
+  .slideQA h3, .slideQA .h3 {
+    font-size: 3rem;
+  }
+	.slideQA h4 {
+	font-size: 3rem;
+  margin: 0;
+  padding-top: 0rem;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
   .slideQA {
     height: 100vh;
   }
-  .slideQA h1, .slideQA .h1 {
-    font-size: 5.5rem;
-  }
-	.slideQA h2, .slideQA .h2 {
-    font-size: 4.5rem;
-  }
-	.slideQA h3, .slideQA .h3 {
+  .slideQA h3, .slideQA .h3 {
     font-size: 3rem;
   }
-  .slideQA h4, .slideQA .h4 {
-    font-size: 3rem;
-  }
-	.slideQA p {
-	font-size: 2rem;
+	.slideQA h4 {
+	font-size: 3rem;
   margin: 0;
   padding-top: 0rem;
 }
 }
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+  .slideQA {
+    height: 100vh;
+  }
+  .slideQA h3, .slideQA .h3 {
+    font-size: 4rem;
+  }
+	.slideQA h4 {
+	font-size: 4rem;
+  margin: 0;
+  padding-top: 0rem;
+}
+}
+
+@media only screen and (max-width: 575px){
+  .slideQA {
+    height: 100vh;
+  }
+  .slideQA h3, .slideQA .h3 {
+    font-size: 4rem;
+  }
+	.slideQA h4 {
+	font-size: 4rem;
+  margin: 0;
+  padding-top: 0rem;
+}
+}
+
 
 .intro2 {
   min-height: 20rem;
@@ -240,7 +287,7 @@ h1 {
   background-size: cover;
 }
 .intro2 h1, .intro2 .h1 {
-  font-size: 4rem;
+  font-size: 4.2rem;
 	color: #7cc4cb;
   margin: 0;
   padding: 0;
@@ -258,7 +305,7 @@ h1 {
   padding: 0;
 }
 .intro2 p {
-	font-size: 1.5rem;
+	font-size: 2rem;
   margin: 0;
   padding-top: 0rem;
 }
