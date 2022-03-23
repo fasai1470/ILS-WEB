@@ -1,0 +1,38 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@white: #eee;
+@color: #14CC72; //Edit this to change all the colors!
+@color-dark: darken(@color, 15%);
+@color-light: lighten(@color, 40%);
+.year-section{
+  margin: 50px auto;
+  color: @color-light;
+  font-size: 1.8em;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  a{
+    font-weight: 700;
+    color: @white
+  }
+  .year{
+    color: @color-dark;
+    font-weight: 400;
+  }
+	.big{
+    font-size: larger;
+    color: @white;
+    font-weight: 100;
+    margin-bottom: .5em;
+	}
+	.aside{
+    font-size: smaller;
+    border-left: 2px solid @color-dark;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    font-weight: 300;
+	}
+  ul{
+    list-style: circle;
+  }
+}
+body{
+  background: @color;
+}

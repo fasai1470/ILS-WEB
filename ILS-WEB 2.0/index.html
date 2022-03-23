@@ -74,6 +74,40 @@ body { font-family: "Circular" !important;
 	font-family: 'Prompt', sans-serif;
 }
 
+/*ไทม์ไลน์ของรายวิชา*/
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+.year-section {
+  margin: 50px auto;
+  color: #b4f8d7;
+  font-size: 1.8em;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+.year-section a {
+  font-weight: 700;
+  color: #eee;
+}
+.year-section .year {
+  color: #0d864b;
+  font-weight: 400;
+}
+.year-section .big {
+  font-size: larger;
+  color: #eee;
+  font-weight: 100;
+  margin-bottom: .5em;
+}
+.year-section .aside {
+  font-size: smaller;
+  border-left: 2px solid #0d864b;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  font-weight: 300;
+}
+.year-section ul {
+  list-style: circle;
+}
+
+
 </style>
 
 </head>
@@ -131,12 +165,81 @@ body { font-family: "Circular" !important;
 							<div >
 								<h1>แผนผังรายวิชา<br>เป็นอย่างไร </h1>
 								<p></p>
+								<div class="container">
+									<div class="row year-section">
+									  <div class="col-xs-12 col-md-2">
+										<div class="pull-right year">2014</div>
+									  </div>
+									  <div class="col-xs-12 col-md-6 col-lg-7">
+										<div class="big">Here's where the main thing I did goes. It's very important, so it's big.</div>
+									  </div>
+									  <div class="col-xs-12 col-md-4 col-lg-3">
+										<div class="aside">Some additional context or things I did. It is small because it is less important</div>
+									  </div>
+									</div>
+									<div class="row year-section">
+									  <div class="col-xs-12 col-md-2">
+										<div class="pull-right year">2013</div>
+									  </div>
+									  <div class="col-xs-12 col-md-6 col-lg-7">
+										<div class="big">More big things
+										  <ul>
+											<li>Sometimes lists</li>
+											<li>are important too</li>
+											<li>Lists with <a>Links</a>.</li>
+										  </ul>
+										</div>
+									  </div>
+									  <div class="col-xs-12 col-md-4 col-lg-3">
+										<div class="aside">Some additional context or things I did. It is small because it is less important</div>
+									  </div>
+									</div>
+									<div class="row year-section">
+									  <div class="col-xs-12 col-md-2">
+										<div class="pull-right year">2012</div>
+									  </div>
+									  <div class="col-xs-12 col-md-6 col-lg-7">
+										<div class="big">Here's where the main thing I did goes. It's very important, so it's big.</div>
+									  </div>
+									  <div class="col-xs-12 col-md-4 col-lg-3">
+										<div class="aside">Some additional context or things I did. It is small because it is less important
+										  <ul>
+											<li>Lists can be fun over here too.</li>
+											<li>ESPECIALLY IF THEY HAVE <a>LINKS</a>.</li>
+										  </ul>
+										</div>
+									  </div>
+									</div>
+									<div class="row year-section">
+									  <div class="col-xs-12 col-md-2">
+										<div class="pull-right year">2011</div>
+									  </div>
+									  <div class="col-xs-12 col-md-6 col-lg-7">
+										<div class="big">Here's where the main thing I did goes. It's very important, so it's big.</div>
+									  </div>
+									  <div class="col-xs-12 col-md-4 col-lg-3">
+										<div class="aside">Some additional context or things I did. It is small because it is less important</div>
+									  </div>
+									</div>
+									<div class="row year-section">
+									  <div class="col-xs-12 col-md-2">
+										<div class="pull-right year">2010</div>
+									  </div>
+									  <div class="col-xs-12 col-md-6 col-lg-7">
+										<div class="big">Here's where the main thing I did goes. It's very important, so it's big.</div>
+									  </div>
+									  <div class="col-xs-12 col-md-4 col-lg-3">
+										<div class="aside">Some additional context or things I did. It is small because it is less important</div>
+									  </div>
+									</div>
+								  </div>
 							</div>
 						</div>
+						
 					</div>
 				</div>	
 <!-- md-none -->
-				<div class="container d-none d-md-block d-lg-none">
+				<div class="container d-none d-md-block">
 					<div class="row gx-5 align-items-center">
 						<div class="col-lg-4 order-lg-2">
 							<div class="px-5"><img class="img-fluid rounded-circle" src="img/act2.png" width="500" height="500" alt="..." /></div>
@@ -187,7 +290,7 @@ body { font-family: "Circular" !important;
 					</div>
 				</div>	
 <!-- md-none -->
-				<div class="container d-none d-md-block d-lg-none">
+				<div class="container d-none d-md-block">
 					<div class="row gx-5 align-items-center">
 						<div class="col-lg-4 order-lg-2">
 							<div class="px-5"><img class="img-fluid rounded-circle" src="img/act2.png" width="500" height="500" alt="..." /></div>
@@ -592,7 +695,7 @@ body { font-family: "Circular" !important;
 
 	<!-- sm-none -->
 	<div class="container d-sm-none">
-		<div class="row">
+		<div class="container">
 			<div class="col-md-6 bg"><img src="img/06.3.png" class ="img-fluid" height="360 px" width="520 px"/> </div>
 			<div class="col-md-6 bg">
 			  <div class="p-1">
