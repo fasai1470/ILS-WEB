@@ -107,7 +107,13 @@ body { font-family: "Circular" !important;
   list-style: circle;
 }
 
-
+a{
+	text-decoration-style: dotted;
+	text-decoration-color: #faf1f0;
+}
+.fac{
+	line-height: 53px;
+}
 </style>
 
 </head>
@@ -120,7 +126,9 @@ body { font-family: "Circular" !important;
 <header class="welcome d-flex align-items-center">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mb-1">ภาควิชาบรรณารักษศาสตร์</h2>
-				<h1 class="mb-1">สาขาสารสนเทศศาสตร์และบรรณารักษศาสตร์</h1>
+				<div>
+					<h1 class="mb-1 fac">สาขาสารสนเทศศาสตร์และบรรณารักษศาสตร์</h1>
+				</div>
                 <h3 class="mb-1">คณะอักษรศาสตร์ มหาวิทยาลัยศิลปากร</h3>
 
             </div>
@@ -231,9 +239,11 @@ body { font-family: "Circular" !important;
 		<div class="pull-right year">ปีที่ 3 ภาคการศึกษาที่ 1</div>
 	  </div>
 	  <div class="col-xs-12 col-md-6 col-lg-7">
-		<div class="big">436 302 การทำรายการสารสนเทศ<br>
-			436 301 เทคโนโลยีเว็บเพื่อการนำเสนอสารสนเทศ<br>
-			436 303 การวิเคราะห์และออกแบบระบบ<br>
+		<!-- /*ทำให้เลือกไว้ก่อนว่าจะเอาแบบไหน*/ -->
+		<div class="big"> 
+			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="right" title="ใส่ทักษะที่จะได้ในรายวิชา">436 302 การทำรายการสารสนเทศ</a><br>
+			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="right" title="ใส่ทักษะที่จะได้ในรายวิชา">436 301 เทคโนโลยีเว็บเพื่อการนำเสนอสารสนเทศ</a><br>
+			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="right" title="ใส่ทักษะที่จะได้ในรายวิชา">436 303 การวิเคราะห์และออกแบบระบบ</a><br>
 		</div>
 	  </div>
 	  <div class="col-xs-12 col-md-4 col-lg-3">

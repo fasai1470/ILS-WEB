@@ -654,6 +654,11 @@ h1 {
 background: #7cc4cb; 
 }
 
+.welcome h1 .mb-1{
+line-height : 1.3350px; 
+
+}
+
 #imgoc {
   border-radius: 100%;
   border-style: solid;
