@@ -649,6 +649,11 @@ h1 {
   }
 }
 
+/*bg's timeline*/
+.bg-timeline{
+background: #7cc4cb; 
+}
+
 #imgoc {
   border-radius: 100%;
   border-style: solid;
