@@ -70,8 +70,12 @@ body { font-family: "Circular" !important;
 }
 /*ตัวอักษรตรงอาชีพ*/
 #form p{
-	font-size: 2 rem;
+	font-size: 24px;
 	font-family: 'Prompt', sans-serif;
+}
+#form h1{
+	font-size: 64px;
+	font-family: "Circular";
 }
 
 /*ไทม์ไลน์ของรายวิชา*/
@@ -89,9 +93,12 @@ body { font-family: "Circular" !important;
 .year-section .year {
   color: #0d864b;
   font-weight: 400;
+  font-family: "Circular";
+  font-size: 50px;
 }
 .year-section .big {
-  font-size: larger;
+  font-family:'Prompt', sans-serif;
+  font-size: 25px;
   color: #eee;
   font-weight: 100;
   margin-bottom: .5em;
@@ -114,6 +121,8 @@ a{
 .fac{
 	line-height: 53px;
 }
+
+
 </style>
 
 </head>
@@ -215,7 +224,7 @@ a{
 <div class="container bg-timeline">
 	<div class="row year-section">
 		<div class="col-md-6">
-		  <div class="pull-right year">ปีที่ / ภาคการศึกษา</div>
+		  <div class="text-center year">ปีที่ / ภาคการศึกษา</div>
 		</div>
 		<div class="col-md-6">
 		  <div class="big text-center">รายวิชาบังคับ<br>และทักษะที่จะได้รับในแต่ละรายวิชา</div>
@@ -223,6 +232,7 @@ a{
 	  </div>
 	<div class="row year-section">
 	  <div class="col-md-6">
+		<!-- /*ทำให้เลือกไว้ก่อนว่าจะเอาแบบไหน*/ -->
 		<div class="pull-right year">ปีที่ 2 ภาคการศึกษาที่ 2</div>
 	  </div>
 	  <div class="col-md-6">
@@ -235,63 +245,55 @@ a{
 		</div>
 	</div>
 	<div class="row year-section">
-	  <div class="col-xs-12 col-md-2">
-		<div class="pull-right year">ปีที่ 3 ภาคการศึกษาที่ 1</div>
+	  <div class="col-md-6">
+		<div class="text-center year">ปีที่ 3 ภาคการศึกษาที่ 1</div>
 	  </div>
-	  <div class="col-xs-12 col-md-6 col-lg-7">
-		<!-- /*ทำให้เลือกไว้ก่อนว่าจะเอาแบบไหน*/ -->
+	  <div class="col-md-6">
 		<div class="big"> 
 			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="right" title="ใส่ทักษะที่จะได้ในรายวิชา">436 302 การทำรายการสารสนเทศ</a><br>
 			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="right" title="ใส่ทักษะที่จะได้ในรายวิชา">436 301 เทคโนโลยีเว็บเพื่อการนำเสนอสารสนเทศ</a><br>
 			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="right" title="ใส่ทักษะที่จะได้ในรายวิชา">436 303 การวิเคราะห์และออกแบบระบบ</a><br>
 		</div>
 	  </div>
-	  <div class="col-xs-12 col-md-4 col-lg-3">
-		<div class="aside"></div>
-	  </div>
+	  
 	</div>
 	<div class="row year-section">
-	  <div class="col-xs-12 col-md-2">
-		<div class="pull-right year">ปีที่ 3 ภาคการศึกษาที่ 2</div>
+	  <div class="col-md-6">
+		<div class="text-center year">ปีที่ 3 ภาคการศึกษาที่ 2</div>
 	  </div>
-	  <div class="col-xs-12 col-md-6 col-lg-7">
-		<div class="big">436 304 บริการสารสนเทศและการตลาด<br>
-			436 305 การวิเคราะห์ทรัพยากรสารสนเทศ<br>
-			436 306 การจัดการเอกสารดิจิทัล<br>
+	  <div class="col-md-6">
+		<div class="big">
+			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="right" title="ใส่ทักษะที่จะได้ในรายวิชา">436 304 บริการสารสนเทศและการตลาด</a><br>
+			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="right" title="ใส่ทักษะที่จะได้ในรายวิชา">436 305 การวิเคราะห์ทรัพยากรสารสนเทศ</a><br>
+			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="right" title="ใส่ทักษะที่จะได้ในรายวิชา">436 306 การจัดการเอกสารดิจิทัล</a><br>
 			</div>
 	  </div>
-	  <div class="col-xs-12 col-md-4 col-lg-3">
-		<div class="aside">
-		</div>
-	  </div>
+	 
 	</div>
 	<div class="row year-section">
-	  <div class="col-xs-12 col-md-2">
-		<div class="pull-right year">ปีที่ 4 ภาคการศึกษาที่ 1</div>
+	  <div class="col-md-6">
+		<div class="text-center year">ปีที่ 4 ภาคการศึกษาที่ 1</div>
 	  </div>
-	  <div class="col-xs-12 col-md-6 col-lg-7">
-		<div class="big">436 402 สัมมนาการฝึกปฏิบัติงาน<br>
-			436 401 การจัดการฐานข้อมูล<br>
-			436 403 การค้นคืนสารสนเทศดิจิทัล<br>
+	  <div class="col-md-6">
+		<div class="big">
+			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="right" title="ใส่ทักษะที่จะได้ในรายวิชา">436 402 สัมมนาการฝึกปฏิบัติงาน</a><br>
+			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="right" title="ใส่ทักษะที่จะได้ในรายวิชา">436 401 การจัดการฐานข้อมูล</a><br>
+			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="right" title="ใส่ทักษะที่จะได้ในรายวิชา">436 403 การค้นคืนสารสนเทศดิจิทัล</a><br>
 		</div>
 	  </div>
-	  <div class="col-xs-12 col-md-4 col-lg-3">
-		<div class="aside"></div>
-	  </div>
+	 
 	</div>
 	<div class="row year-section">
-	  <div class="col-xs-12 col-md-2">
-		<div class="pull-right year">ปีที่ 4 ภาคการศึกษาที่ 2</div>
+	  <div class="col-md-6">
+		<div class="text-center year">ปีที่ 4 ภาคการศึกษาที่ 2</div>
 	  </div>
-	  <div class="col-xs-12 col-md-6 col-lg-7">
-		<div class="big">436 404 การจัดการความรู้<br>
-			436 405 ห้องสมุดดิจิทัลและคลังสารสนเทศสถาบัน<br>
-			436 406 การวิจัยพื้นฐานในงานสารสนเทศ<br></div>
+	  <div class="col-md-6">
+		<div class="big">
+			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="right" title="ใส่ทักษะที่จะได้ในรายวิชาสิจ๊ะ ๆ">436 404 การจัดการความรู้</a><br>
+			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="right" title="ลองใส่ทักษะที่จะได้ในรายวิชา">436 405 ห้องสมุดดิจิทัลและคลังสารสนเทศสถาบัน</a><br>
+			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="right" title="ทดลองใส่ทักษะที่จะได้ในรายวิชา">436 406 การวิจัยพื้นฐานในงานสารสนเทศ</a><br></div>
 	  </div>
-	  <div class="col-xs-12 col-md-4 col-lg-3">
-		<div class="aside">
-			</div>
-	  </div>
+	 
 	</div>	
 </div>
 
@@ -476,7 +478,7 @@ a{
 						<div class="col-lg-7 order-lg-1">
 							<div >
 								<h1>ทุนคณะ<br>มีอะไรบ้าง?</h1>
-								<p>ที่คณะอักษรศาสตร์ มหาวิทยาลัยศิลปากรของเรา มีทุนการศึกษามากมายเพื่อสนับสนุนและช่วยเหลือนักศึกษาของเรา
+								<p>คณะอักษรศาสตร์ มหาวิทยาลัยศิลปากรของเรา มีทุนการศึกษามากมายเพื่อสนับสนุนและช่วยเหลือนักศึกษาของเรา
 									แต่นักศึกษาส่วนมาก ยังไม่ทราบว่ามีทุนเหล่านี้อยู่ด้วย 
 									ดังนั้น พวกเรามาดูกันซิว่า ทุนเหล่านั้น มีทุนอะไรกันบ้างน้าาา
 								</p>
@@ -488,7 +490,7 @@ a{
 				<div class="container d-none d-md-block d-lg-none">
 					<div class="row gx-5 align-items-center">
 						<div class="col-lg-5 order-lg-2">
-							<div class="p-5"><img class="img-fluid rounded-circle" src="img/scholarship.png" width="400" height="400" alt="..." /></div>
+							<div class="p-5"><img class="img-fluid center" src="img/scholarship.png" width="400" height="400" alt="..." /></div>
 						</div>
 						<div class="col-lg-7 order-lg-1">
 							<div >
@@ -506,7 +508,7 @@ a{
 		<div class="container d-sm-none">
 			<div class="row gx-5 align-items-center">
 				<div class="col-lg-5 order-lg-2">
-					<div class="p-5"><img class="img-fluid rounded-circle" src="img/scholarship.png" width="400" height="400" alt="..." /></div>
+					<div class="p-5"><img class="img-fluid center" src="img/scholarship.png" width="400" height="400" alt="..." /></div>
 				</div>
 				<div class="col-lg-7 order-lg-1">
 					<div >
@@ -604,6 +606,8 @@ a{
 	
 <!-- เกริ่นอาชีพ -->
 <div id="jobintro" class="container intro2">
+
+<!-- lg -->
     <div class="row d-none d-xl-block">
 		<div class="container">
                 <div class="row align-items-center">
@@ -621,6 +625,7 @@ a{
             </div>
     </div>
 
+<!-- md none -->
 	<div class="row d-none d-md-block d-lg-none">
 		<div class="container">
                 <div class="row align-items-center">
@@ -709,9 +714,11 @@ a{
 		  <div class="col-md-6 bg">
 			<div class="p-1">
 			  <div class="bg">
-				<h1 class="font-size:2.91em;" >พบเจอปัญหาหนักใจให้ติดต่อเรา</h1>
-				  <p>มีเรื่องหนักใจ อยากปรึกษาหรือร้องเรียนกับทางภาควิชา<br> 
+				<h1>พบเจอปัญหาหนักใจ<br>ให้ติดต่อเรา</h1>
+				<div class="container">
+					<p>มีเรื่องหนักใจ อยากปรึกษาหรือร้องเรียนกับทางภาควิชา<br> 
 					จิ้มที่ปุ่มด้านล่างเพื่อเข้าไปบอกเล่าเก้าสิบได้เลย</p>
+				  </div>
 			  </div>
 			</div>
 		<!-- btn -->
@@ -729,9 +736,11 @@ a{
 		<div class="col-md-6 bg">
 		  <div class="p-1">
 			<div class="bg">
-			  <h1 class="font-size:2.91em; text-center">พบเจอปัญหาหนักใจ<br>ให้ติดต่อเรา</h1>
-				<h2>มีเรื่องหนักใจ อยากปรึกษาหรือร้องเรียนกับทางภาควิชา<br> 
-				  จิ้มที่ปุ่มด้านล่างเพื่อเข้าไปบอกเล่าเก้าสิบได้เลย</h2>
+			  <h1 class="text-center">พบเจอปัญหาหนักใจ<br>ให้ติดต่อเรา</h1>
+			  <div class="container">
+				<p>มีเรื่องหนักใจ อยากปรึกษาหรือร้องเรียนกับทางภาควิชา<br> 
+				จิ้มที่ปุ่มด้านล่างเพื่อเข้าไปบอกเล่าเก้าสิบได้เลย</p>
+			  </div>
 			</div>
 		  </div>
 	  <!-- btn -->
@@ -745,13 +754,16 @@ a{
 	<!-- sm-none -->
 	<div class="container d-sm-none">
 		<div class="container">
-			<div class="col-md-6 bg"><img src="img/06.3.png" class ="img-fluid" height="360 px" width="520 px"/> </div>
+			<div class="col-md-6 bg"><img src="img/06.3.png" class ="img-fluid" height="360 px" width="520 px"/></div>
 			<div class="col-md-6 bg">
 			  <div class="p-1">
 				<div class="bg">
-				  <h1 class="font-size:2.91em; text-center">พบเจอปัญหาหนักใจ<br>ให้ติดต่อเรา</h1>
-					<h2>มีเรื่องหนักใจ อยากปรึกษาหรือร้องเรียนกับทางภาควิชา<br> 
-					  จิ้มที่ปุ่มด้านล่างเพื่อเข้าไปบอกเล่าเก้าสิบได้เลย</h2>
+				  <h1 class="text-center">พบเจอปัญหาหนักใจ<br>ให้ติดต่อเรา</h1>
+				  <div class="container">
+					  <p>มีเรื่องหนักใจ อยากปรึกษาหรือร้องเรียนกับทางภาควิชา<br> 
+					  จิ้มที่ปุ่มด้านล่างเพื่อเข้าไปบอกเล่าเก้าสิบได้เลย</p>
+					</div>
+					
 				</div>
 			  </div>
 		  <!-- btn -->
