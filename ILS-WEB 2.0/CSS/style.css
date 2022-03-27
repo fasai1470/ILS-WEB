@@ -575,14 +575,14 @@ h1 {
 
 /*--XL-------------------*/
 @media (min-width: 1200px) {
-  .intro2 {
+  .intro3 {
     height: 50vh;
   }
   .intro3 h1, .intro3 .h1 {
     font-size: 4rem;
     color: #7cc4cb;
   }
-  .intro3 h2, .intro3 .h2 {
+  .intro3 p, .intro3 .p {
     font-size: 3rem;
     color: #000000;
     font-family: 'Prompt', sans-serif;
@@ -590,14 +590,14 @@ h1 {
 }
 /*--LG-------------------*/
 }@media only screen and (min-width: 992px) and (max-width: 1199px){
-  .intro2 {
+  .intro3 {
     height: 50vh;
   }
   .intro3 h1, .intro3 .h1 {
     font-size: 4rem;
     color: #7cc4cb;
   }
-  .intro3 h2, .intro3 .h2 {
+  .intro3 p, .intro3 .p {
     font-size: 3rem;
     color: #000000;
     font-family: 'Prompt', sans-serif;
@@ -605,14 +605,14 @@ h1 {
 }
 /*--MD-------------------*/
 @media only screen and (min-width: 768px) and (max-width: 991px){
-  .intro2 {
+  .intro3 {
     height: 50h;
   }
   .intro3 h1, .intro3 .h1 {
     font-size: 3rem;
     color: #7cc4cb;
   }
-  .intro3 h2, .intro3 .h2 {
+  .intro3 p, .intro3 .p {
     font-size: 1.5rem;
     color: #000000;
     font-family: 'Prompt', sans-serif;
@@ -620,32 +620,128 @@ h1 {
 }
 /*--SM-------------------*/
 @media only screen and (min-width: 576px) and (max-width: 767px){
-  .intro2 {
+  .intro3 {
     height: 50vh;
   }
   .intro3 h1, .intro3 .h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #7cc4cb;
   }
-  .intro3 h2, .intro3 .h2 {
-    font-size: 1.5rem;
+  .intro3 p, .intro3 .p {
+    font-size: 1.2rem;
     color: #000000;
     font-family: 'Prompt', sans-serif;
   }
 }
 /*--XS-------------------*/
 @media only screen and (max-width: 575px){
-  .intro2 {
+  .intro3 {
     height: 50vh;
   }
   .intro3 h1, .intro3 .h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #7cc4cb;
   }
-  .intro3 h2, .intro3 .h2 {
-    font-size: 1.5rem;
+  .intro3 p, .intro3 .p {
+    font-size: 1.2rem;
     color: #000000;
     font-family: 'Prompt', sans-serif;
+  }
+}
+
+.timeline1 {
+  min-height: 20rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+	/*background: #faf1f0;*/
+  /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*--XL-------------------*/
+@media (min-width: 1200px) {
+  .timeline1 {
+    height: 50vh;
+  }
+  .timeline1 a, .timeline1 .a {
+    font-size: 2rem;
+    color: #eee;
+    font-family:'Prompt', sans-serif;
+  }
+  .timeline1 h2, .timeline1 .h2 {
+    font-size: 3.2rem;
+    color: #0d864b;
+    font-family: "Circular";
+  }
+}
+/*--LG-------------------*/
+}@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .timeline1 {
+    height: 50vh;
+  }
+  .timeline1 a, .timeline1 .a {
+    font-size: 2rem;
+    color: #eee;
+    font-family:'Prompt', sans-serif;
+  }
+  .timeline1 h2, .timeline1 .h2 {
+    font-size: 3.2rem;
+    color: #0d864b;
+    font-family: "Circular";
+  }
+}
+/*--MD-------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .timeline1 {
+    height: 50h;
+  }
+  .timeline1 a, .timeline1 .a {
+    font-size: 1.5rem;
+    color: #eee;
+    font-family:'Prompt', sans-serif;
+  }
+  .timeline1 h2, .timeline1.h2 {
+    font-size: 2.2rem;
+    color: #0d864b;
+    font-family: "Circular";
+  }
+}
+/*--SM-------------------*/
+@media only screen and (min-width: 576px) and (max-width: 767px){
+  .timeline1 {
+    height: 50vh;
+  }
+  .timeline1 a, .timeline1 .a {
+    font-size: 1rem;
+    color: #eee;
+    font-family:'Prompt', sans-serif;
+  }
+  .timeline1 h2, .timeline1 .h2 {
+    font-size: 2rem;
+    color: #0d864b;
+    font-family: "Circular";
+  }
+}
+/*--XS-------------------*/
+@media only screen and (max-width: 575px){
+  .timeline1 {
+    height: 50vh;
+  }
+  .timeline1 a, .timeline1 .a {
+    font-size: 1rem;
+    font-family:'Prompt', sans-serif;
+    color: #eee;
+  }
+  .timeline1 h2, .timeline1 .h2 {
+    font-size: 2rem;
+    color: #0d864b;
+    font-family: "Circular";
   }
 }
 
