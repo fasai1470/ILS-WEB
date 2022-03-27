@@ -151,9 +151,10 @@ body { font-family: "Circular" !important;
 	  </div>
 	  <div class="col-md-7 ">
 		<div class="big">
-			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="right" title="แหล่งสารสนเทศ เช่น ฐานข้อมูล ห้องสมุด">436 201 แหล่งสารสนเทศ</a><br>
-			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="right" title="การบอกรับ คัดออก ดูแลรักษาทรัพยากรสารสนเทศ">436 202 การพัฒนาทรัพยากรสารสนเทศ</a><br>
-			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="right" title="ใส่ทักษะที่จะได้ในรายวิชา">436 203 การออกแบบกราฟิกในงานสารสนเทศ</a><br>
+			
+			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="top" title="แหล่งสารสนเทศ เช่น ฐานข้อมูล ห้องสมุด">436 201 แหล่งสารสนเทศ</a><br>
+			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="top" title="การบอกรับ คัดออก ดูแลรักษาทรัพยากรสารสนเทศ">436 202 การพัฒนาทรัพยากรสารสนเทศ</a><br>
+			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="top" title="ใส่ทักษะที่จะได้ในรายวิชา">436 203 การออกแบบกราฟิกในงานสารสนเทศ</a><br>
 			
 			</div>
 		</div>
@@ -800,6 +801,13 @@ tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="t
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
+
+import { createPopper } from '@popperjs/core';
+const popcorn = document.querySelector('#popcorn');
+const tooltip = document.querySelector('#tooltip');
+createPopper(popcorn, tooltip, {
+  placement: 'top',
+});
 </script>
 </body>
 </html>
