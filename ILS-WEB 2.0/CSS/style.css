@@ -257,7 +257,7 @@ h1 {
   }
   .slideQA h4, .slideQA .h4 {
     font-size: 2rem;
-    color: #003cff;
+    color: #0400ff;
     font-family: 'Prompt', sans-serif;
   }
 }
@@ -273,7 +273,7 @@ h1 {
   }
   .slideQA h4, .slideQA .h4 {
     font-size: 2rem;
-    color: #003cff;
+    color: #0400ff;
     font-family: 'Prompt', sans-serif;
   }
 }
@@ -283,13 +283,13 @@ h1 {
     height: 100vh;
   }
   .slideQA h3, .slideQA .h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #ff5e00;
     font-family: 'Prompt', sans-serif;
   }
   .slideQA h4, .slideQA .h4 {
-    font-size: 2.5rem;
-    color: #003cff;
+    font-size: 2rem;
+    color: #0400ff;
     font-family: 'Prompt', sans-serif;
   }
 }
@@ -299,13 +299,13 @@ h1 {
     height: 100vh;
   }
   .slideQA h3, .slideQA .h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #ff5e00;
     font-family: 'Prompt', sans-serif;
   }
   .slideQA h4, .slideQA .h4 {
-    font-size: 1.5rem;
-    color: #003cff;
+    font-size: 1.2rem;
+    color: #0400ff;
     font-family: 'Prompt', sans-serif;
   }
 }
@@ -315,13 +315,13 @@ h1 {
     height: 100vh;
   }
   .slideQA h3, .slideQA .h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #ff5e00;
     font-family: 'Prompt', sans-serif;
   }
   .slideQA h4, .slideQA .h4 {
-    font-size: 1.5rem;
-    color: #003cff;
+    font-size: 1.2rem;
+    color: #0400ff;
     font-family: 'Prompt', sans-serif;
   }
 }
