@@ -36,7 +36,19 @@ body { font-family: "Circular" !important;
 		
 		}
 
+.tooltip-align{
+	text-align: left;
+}
 
+.dark-button{
+	background-color: black;
+	color: white;
+}
+.dark-button:hover {
+    color: #000;
+    background-color: #58f231;
+    border-color: #25cff2;
+}
 </style>
 
 </head>
@@ -144,15 +156,15 @@ body { font-family: "Circular" !important;
 		  <div class="big text-center">รายวิชาบังคับ<br>และทักษะที่จะได้รับในแต่ละรายวิชา</div>
 		</div>
 	  </div>
-	<div class="row year-section">
+	<div class="row year-section card">
 	  <div class="col-md-5">
 		<!-- /*ทำให้เลือกไว้ก่อนว่าจะเอาแบบไหน*/ -->
-		<div class="text-center year"><h2>ปีที่ 2 ภาคการศึกษาที่ 2</h2></div>
+		<div class="text-end year"><h2>ปีที่ 2<br> ภาคการศึกษาที่ 2</h2></div>
 	  </div>
 	  <div class="col-md-7 ">
 		<div class="big">
 			
-			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="top" title="แหล่งสารสนเทศ เช่น ฐานข้อมูล ห้องสมุด">436 201 แหล่งสารสนเทศ</a><br>
+			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="right" data-custom-class="tooltip-align" title="แหล่งสารสนเทศ เช่น ฐานข้อมูล ห้องสมุด">436 201 แหล่งสารสนเทศ</a><br>
 			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="top" title="การบอกรับ คัดออก ดูแลรักษาทรัพยากรสารสนเทศ">436 202 การพัฒนาทรัพยากรสารสนเทศ</a><br>
 			<a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="top" title="ใส่ทักษะที่จะได้ในรายวิชา">436 203 การออกแบบกราฟิกในงานสารสนเทศ</a><br>
 			
@@ -281,7 +293,7 @@ body { font-family: "Circular" !important;
 	<div class="container d-none d-lg-block">
                 <div class="row align-items-center">
                     <div class="col-lg-4">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="img/Q1.png" width="500" height="500"alt="..." /></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="img/Q1,1.png" width="500px" height="500px"alt="..." /></div>
                     </div>
                     <div class="col-lg-8">
                         <div>
@@ -298,7 +310,7 @@ body { font-family: "Circular" !important;
 			<div class="container d-none d-md-block d-lg-none">
                 <div class="row align-items-center">
                     <div class="col-lg-4">
-                        <div class="p-5 text-center"><img class="img-fluid rounded-circle" src="img/Q1.png" width="500" height="500" alt="..." /></div>
+                        <div class="p-5 text-center"><img class="img-fluid rounded-circle" src="img/Q1,1.png" width="500" height="500" alt="..." /></div>
                     </div>
                     <div class="col-lg-8">
                         <div>
@@ -315,7 +327,7 @@ body { font-family: "Circular" !important;
 			<div class="container d-md-none">
                 <div class="row align-items-center">
                     <div class="col-lg-4">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="img/Q1.png" width="500" height="500" alt="..." /></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="img/Q1,1.png" width="500" height="500" alt="..." /></div>
                     </div>
                     <div class="col-lg-8">
                         <div>
@@ -731,7 +743,7 @@ body { font-family: "Circular" !important;
 			</div>
 		<!-- btn -->
 				<div class="container center">
-					<button type="button" class="btn btn-info center">คลิก<br>เพื่อไปยังฟอร์ม</button>
+					<button type="button" class="btn btn-info center dark-button">คลิก<br>เพื่อไปยังฟอร์ม</button>
 				</div>
 			</div>
 			</div>
@@ -776,7 +788,7 @@ body { font-family: "Circular" !important;
 			  </div>
 		  <!-- btn -->
 				  <div class="container center">
-					  <button type="button" class="btn btn-info center">คลิก<br>เพื่อไปยังฟอร์ม</button>
+					  <button type="button" class="btn btn-info center dark-button">คลิก<br>เพื่อไปยังฟอร์ม</button>
 				  </div>
 			  </div>
 			  </div>
@@ -796,18 +808,15 @@ body { font-family: "Circular" !important;
 
 <!---------------------------------------------------------------------------------------------------------------------->	
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
 
-tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
+<script>
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) 
+{return new bootstrap.Tooltip(tooltipTriggerEl)})
 
-import { createPopper } from '@popperjs/core';
-const popcorn = document.querySelector('#popcorn');
-const tooltip = document.querySelector('#tooltip');
-createPopper(popcorn, tooltip, {
-  placement: 'top',
-});
+
+</script>
 
 </script>
 </body>
