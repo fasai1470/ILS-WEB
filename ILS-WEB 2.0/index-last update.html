@@ -1,0 +1,1165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>LIS-SU</title>
+<meta name ="keywords" content ="ILS, SU, Silpakorn, Information and Library Science, Library, คณะอักษรศาสตร์ มหาวิทยาลัยศิลปากร, เอกสารสนเทศศาสตร์และบรรณารักษศาสตร์, เอกบรรณ" />
+<meta name ="description" content =" ">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+	
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+<style type="text/css">
+
+h1 {
+font-size:2.91em;
+margin:0;
+color: #7cc4cb;
+	}
+
+@font-face {
+  font-family: "Circular";
+  src: url("CSS/Circular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body { font-family: "Circular" !important; 
+		background-color: #faf1f0;		
+		}
+        
+.light {
+	color: #343a3a; 
+}
+/***css of timeline อย่าเพิงเอาส่วนนี้ไปรวมกับไฟล์ CSS ****************************************************/
+body {
+    margin-top: 20px;
+}
+.timeline_area {
+    position: relative;
+    z-index: 1;
+}
+.single-timeline-area {
+    position: relative;
+    z-index: 1;
+    padding-left: 180px;
+}
+@media only screen and (max-width: 575px) {
+    .single-timeline-area {
+        padding-left: 100px;
+    }
+}
+.single-timeline-area .timeline-date {
+    position: absolute;
+    width: 180px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-right: 60px;
+}
+@media only screen and (max-width: 575px) {
+    .single-timeline-area .timeline-date {
+        width: 100px;
+    }
+}
+.single-timeline-area .timeline-date::after {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    content: "";
+    background-color: #ebebeb;
+    top: 0;
+    right: 30px;
+    z-index: 1;
+}
+.single-timeline-area .timeline-date::before {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #f1c40f;
+    content: "";
+    top: 50%;
+    right: 26px;
+    z-index: 5;
+    margin-top: -5.5px;
+}
+.single-timeline-area .timeline-date p {
+    margin-bottom: 0;
+    color: #020710;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.single-timeline-area .single-timeline-content {
+    position: relative;
+    z-index: 1;
+    padding: 30px 30px 25px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+    box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+    border: 1px solid #ebebeb;
+}
+@media only screen and (max-width: 575px) {
+    .single-timeline-area .single-timeline-content {
+        padding: 20px;
+    }
+}
+.single-timeline-area .single-timeline-content .timeline-icon {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    width: 30px;
+    height: 30px;
+    background-color: #f1c40f;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 30px;
+    flex: 0 0 30px;
+    text-align: center;
+    max-width: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.single-timeline-area .single-timeline-content .timeline-icon i {
+    color: #ffffff;
+    line-height: 30px;
+}
+.single-timeline-area .single-timeline-content .timeline-text h6 {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+.single-timeline-area .single-timeline-content .timeline-text p {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.single-timeline-area .single-timeline-content:hover .timeline-icon,
+.single-timeline-area .single-timeline-content:focus .timeline-icon {
+    background-color: #020710;
+}
+.single-timeline-area .single-timeline-content:hover .timeline-text h6,
+.single-timeline-area .single-timeline-content:focus .timeline-text h6 {
+    color: #3f43fd;
+}
+
+/*ตัวอักษรตรงชื่อรายวิชาตรงวิชาเลือก*/
+.timeline-text p a {
+    font-family: "Circular";
+    font-size: 16px;
+}
+                                          
+/*รายละเอียดตรงทักษะที่ได้*/
+.collapse .card{
+    font-family: 'Prompt', sans-serif;
+    font-size: 12px;
+}
+
+/*ปุ่มฟอร์ม*/
+.tooltip-align{
+	text-align: left;
+}
+
+.dark-button{
+	background-color: #7cc4cb;
+	color: white;
+}
+.dark-button:hover {
+    color: whitesmoke;
+    background-color: #007a6d;
+    border-color: #25cff2;
+}
+</style>
+
+</head>
+
+<body>
+<!-- ขอบนอกสุด --------------------------------------------------------------------------------------------------------------------------------->
+	
+<!-- Title ----------------------------------------------------------------------------------------------------------------------------------------->
+	
+<header class="welcome d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+               
+                    <h2 class="mb-1">ภาควิชาบรรณารักษศาสตร์</h2>
+                
+                
+				<div>
+					<h1 class="mb-1 fac">สาขาวิชาสารสนเทศศาสตร์และบรรณารักษศาสตร์</h1>
+				</div>
+                <h3 class="mb-1">คณะอักษรศาสตร์ มหาวิทยาลัยศิลปากร</h3>
+
+            </div>
+        </header>
+	
+	
+<!-- Navigation -------------------------------------------------------------------------------------------------------------------->
+	
+<nav class="navbar navbar-expand-lg navbar-dark bgsu bg-gradient nav1 sticky-top">
+	<div class="container-fluid">
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+	<div class="container-fluid collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+    	<ul class="navbar-nav e-auto mb-2 mb-lg-0">
+			
+		<li class="nav-item">		<a href="#welcome" class="nav-link">หน้าแรก</a>		  		</li>
+
+		  <li class="nav-item">		<a href="#timeline" class="nav-link ">แผนผังรายวิชา</a>		</li>
+
+		  <li class="nav-item">		<a href="#lifeintro" class="nav-link">ชีวิตในเอกมีอะไร</a>		</li>
+
+		  <li class="nav-item">		<a href="#jobintro" class="nav-link">เรียนจบแล้วไปไหน?</a>		   </li>
+			
+		  <li class="nav-item">		<a href="#form" class="nav-link">แบบฟอร์มร้องเรียน</a>		   </li>
+    	</ul>
+ 	</div>
+	</div>
+</nav>
+
+
+<!-- timeline intro-------------------------------------------------------------------------------------------------------------------------------->
+	
+<div id="timeline" class="intro">
+	<!-- lg-none -->
+	<div class="container d-none d-lg-block">
+					<div class="row gx-5 align-items-center">
+						<div class="col-lg-4 order-lg-2">
+							<div class="px-5"><img class="img-fluid " src="img/timeline2.png" width="300" height="300" alt="..."/></div>
+						</div>
+						<div class="col-lg-8 order-lg-1">
+							<div>
+								<h1>แผนผังรายวิชา<br>เป็นอย่างไร </h1>
+								<p></p>
+							</div>
+						</div>
+						
+					</div>
+				</div>	
+<!-- md-none -->
+				<div class="container d-none d-md-block d-lg-none">
+					<div class="row gx-5 alid-ngn-items-center">
+						<div class="col-lg-4 order-lg-2">
+							<div class="px-5 text-center"><img class="img-fluid " style="margin-bottom: 2rem;" src="img/timeline2.png" width="300" height="300" alt="..." /></div>
+						</div>
+						<div class="col-lg-8 order-lg-1">
+							<div >
+								<h1 class="text-center">แผนผังรายวิชา<br>เป็นอย่างไร </h1>
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>	
+
+	<!-- sm-none -->
+		<div class="container d-block d-sm-none">
+			<div class="row gx-5 align-items-center">
+				<div class="col-lg-4 order-lg-2">
+					<div class="px-5"><img class="img-fluid " src="img/timeline2.png" style="margin-bottom: 2rem;" width="300" height="300" alt="..." /></div>
+				</div>
+				<div class="col-lg-8 order-lg-1">
+					<div >
+						<h1 class="text-center">แผนผังรายวิชา<br>เป็นอย่างไร</h1>
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+	</div>
+</div>
+
+<!-- ไทม์ไลน์รายวิชา ---------------------------------------------------------------------------------------------------->
+<div class="container bg-timeline timeline1">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<section class="timeline_area section_padding_130">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-8 col-lg-6">
+                <!-- Section Heading-->
+                <div class="section_heading text-center">
+                    <h6></h6>
+                    <h3></h3>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <!-- Timeline Area-->
+                <div class="apland-timeline-area">
+                    <!-- Single Timeline Content-->
+                    <div class="single-timeline-area">
+                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                            <p>ปีที่ 2 ภาคการศึกษาที่ 2</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>436 201 แหล่งสารสนเทศ</h6>
+                                        <p>ใส่ทักษะที่จะได้ในรายวิชา</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-archive" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>436 202 การพัฒนาทรัพยากรสารสนเทศ</h6>
+                                        <p>ใส่ทักษะที่จะได้ในรายวิชา</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-address-book" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>436 203 การออกแบบกราฟิกในงานสารสนเทศ</h6>
+                                        <p>ใส่ทักษะที่จะได้ในรายวิชาสิจ๊ะ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Single Timeline Content-->
+                     <div class="single-timeline-area">
+                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                            <p>ปีที่ 3 ภาคการศึกษาที่ 1</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>436 302 การทำรายการสารสนเทศ</h6>
+                                        <p>ใส่ทักษะที่จะได้ในรายวิชา</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-archive" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>436 301 เทคโนโลยีเว็บเพื่อการนำเสนอสารสนเทศ</h6>
+                                        <p>ใส่ทักษะที่จะได้ในรายวิชา<p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-address-book" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>436 303 การวิเคราะห์และออกแบบระบบ</h6>
+                                        <p>ใส่ทักษะที่จะได้ในรายวิชาสิจ๊ะ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Single Timeline Content-->
+                     <div class="single-timeline-area">
+                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                            <p>ปีที่ 3 ภาคการศึกษาที่ 2</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>436 304 บริการสารสนเทศและการตลาด</h6>
+                                        <p>ใส่ทักษะที่จะได้ในรายวิชาสิจ๊ะ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-archive" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>436 305 การวิเคราะห์ทรัพยากรสารสนเทศ</h6>
+                                        <p>ใส่ทักษะที่จะได้ในรายวิชา</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-address-book" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>436 306 การจัดการเอกสารดิจิทัล</h6>
+                                        <p>ใส่ทักษะที่จะได้ในรายวิชา</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Timeline Content-->
+                    <div class="single-timeline-area">
+                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                            <p>ปีที่ 4 ภาคการศึกษาที่ 1</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>436 402 สัมมนาการฝึกปฏิบัติงาน</h6>
+                                        <p>ใส่ทักษะที่จะได้ในรายวิชา</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-archive" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>436 401 การจัดการฐานข้อมูล</h6>
+                                        <p>ใส่ทักษะที่จะได้ในรายวิชา<p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-address-book" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>436 403 การค้นคืนสารสนเทศดิจิทัล</h6>
+                                        <p>ใส่ทักษะที่จะได้ในรายวิชา</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Timeline Content-->
+                    <div class="single-timeline-area">
+                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                            <p>ปีที่ 4 ภาคการศึกษาที่ 2</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-id-card" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>436 404 การจัดการความรู้</h6>
+                                        <p>ใส่ทักษะที่จะได้ในรายวิชา</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>436 405 ห้องสมุดดิจิทัลและคลังสารสนเทศสถาบัน </h6>
+                                        <p>ใส่ทักษะที่จะได้ในรายวิชาสิจ๊ะ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>436 406 การวิจัยพื้นฐานในงานสารสนเทศ</h6>
+                                        <p>ใส่ทักษะที่จะได้ในรายวิชา</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- รายวิชาเลือก Timeline Content-->
+                    <div class="single-timeline-area">
+                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                            <p class="text-center">รายวิชาเลือก<br>(คลิกที่ชื่อวิชา<br>เพื่อดูทักษะที่จะได้รับในแต่ละรายวิชา)</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-id-card" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>สายวิชาบรรณารักษศาสตร์</h6>
+                                        <p>
+                                            <a href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                            <p>436 231 การส่งเสริมการอ่านในศตวรรษที่ 21 </p>
+                                            </a>
+                                        </p>
+                                        <div class="collapse" id="collapseExample">
+                                            <div class="card card-body">
+                                              ใส่ทักษะที่จะได้ในรายวิชา
+                                            </div>
+                                          </div>
+                                          <br>
+                                          <p>
+                                            <a href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                            <p>436 332 เครือข่ายทางสังคมและการสื่อสารทางวิชาชีพ </p>
+                                            </a>
+                                        </p>
+                                        <div class="collapse" id="collapseExample">
+                                            <div class="card card-body">
+                                              ใส่ทักษะที่จะได้ในรายวิชา
+                                            </div>
+                                          </div>
+                                          <br>
+                                            
+                                            436 333 การจัดการจดหมายเหตุ<br>
+                                            436 337 ภาษาอังกฤษเพื่อนักสารสนเทศ<br>
+                                            436 339 ระบบห้องสมุดอัตโนมัติ<br>
+                                            436 431 สารสนเทศทางวัฒนธรรม <br>
+                                          
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>สายวิชาการออกแบบและสร้างสรรค์ </h6>
+                                        <p>436 331 การเล่าเรื่องเชิงสร้างสรรค์<br>
+                                            436 334 การออกแบบสื่อดิจิทัลและสิ่งพิมพ์<br>
+                                            436 336 การถ่ายภาพดิจิทัลและการผลิตวีดิทัศน์<br>
+                                            436 340 การสื่อสารในงานสารสนเทศ<br>
+                                            436 411  การจัดการสารสนเทศธุรกิจ<br>
+                                            436 433 การบริหารโครงการ<br>
+                                            436 434 ศิลปะในสถาบันบริการสารสนเทศ<br>
+                                            436 435 การศึกษาเอกเทศ<br>
+                                            436 436 การออกแบบและผลิตสื่อมัลติมีเดีย<br>
+                                            </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>สายวิชาเทคโนโลยีสารสนเทศ</h6>
+                                        <p>436 232 โปรแกรมประยุกต์เพื่องานวิชาการ<br>
+                                            436 233 โปรแกรมประยุกต์โอเพนซอร์สเพื่องานสารสนเทศ<br>
+                                            436 335 โปรแกรมประยุกต์เพื่องานธุรกิจ<br>
+                                            436 338 การนําเสนอด้วยภาพ<br>
+                                            436 432 การวิเคราะห์ข้อมูล<br>
+                                            436 437 การเขียนโปรแกรมเว็บ<br>
+                                            </p>
+                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+
+
+<!-- LifeStyle intro-------------------------------------------------------------------------------------------------------------------------------->
+	
+<div id="lifeintro" class="intro">
+
+	<!-- lg- -->
+	<div class="container d-none d-lg-block">
+					<div class="row gx-5 align-items-center">
+						<div class="col-lg-4 order-lg-2">
+							<div class="px-5"><img class="img-fluid rounded-circle" src="img/act2.png" width="500" height="500" alt="..."/></div>
+						</div>
+						<div class="col-lg-8 order-lg-1">
+							<div>
+								<h1>ชีวิตในเอก<br> มีอะไร? </h1>
+								<p>การใช้ชีวิตในเอกของเราก็ไม่ได้มีแค่เข้ามาเลคเชอร์อย่างเดียวนะ เมื่อเข้ามาแล้วจะมีรับน้องเพื่อกระชับสัมพันธ์กับเพื่อน ๆ และมีกิจกรรมของเอกนั่นคือห้องสมุดเคลื่อนที่ด้วย และก่อนที่ทุกคนจะขึ้นปี 4 ก็จะมีการฝึกงานในช่วงปิดเทอมหลังจบปี 3 ด้วย</p>
+							</div>
+						</div>
+					</div>
+				</div>	
+<!-- md- -->
+				<div class="container d-none d-md-block d-lg-none">
+					<div class="row gx-5 align-items-center">
+						<div class="col-lg-4 order-lg-2">
+							<div class="px-5 text-center"><img class="img-fluid rounded-circle" style="margin-bottom: 2rem;" src="img/act2.png" width="600" height="600" alt="..." /></div>
+						</div>
+						<div class="col-lg-8 order-lg-1">
+							<div >
+								<h1 class="text-center">ชีวิตในเอก <br> มีอะไร? </h1>
+								<p>การใช้ชีวิตในเอกของเราก็ไม่ได้มีแค่เข้ามาเลคเชอร์อย่างเดียวนะ เมื่อเข้ามาแล้วจะมีรับน้องเพื่อกระชับสัมพันธ์กับเพื่อน ๆ และมีกิจกรรมของเอกนั่นคือห้องสมุดเคลื่อนที่ด้วย และก่อนที่ทุกคนจะขึ้นปี 4 ก็จะมีการฝึกงานในช่วงปิดเทอมหลังจบปี 3 ด้วย</p>
+							</div>
+						</div>
+					</div>
+				</div>	
+
+	<!-- sm- -->
+		<div class="container d-md-none">
+			<div class="row gx-5 align-items-center">
+				<div class="col-lg-4 order-lg-2">
+					<div class="px-5"><img class="img-fluid rounded-circle" style="margin-bottom: 2rem;" src="img/act2.png" width="500" height="500" alt="..." /></div>
+				</div>
+				<div class="col-lg-8 order-lg-1">
+					<div >
+						<h1 class="text-center">ชีวิตในเอก <br> มีอะไร? </h1>
+						<p>การใช้ชีวิตในเอกของเราก็ไม่ได้มีแค่เข้ามาเลคเชอร์อย่างเดียวนะ เมื่อเข้ามาแล้วจะมีรับน้องเพื่อกระชับสัมพันธ์กับเพื่อน ๆ และมีกิจกรรมของเอกนั่นคือห้องสมุดเคลื่อนที่ด้วย และก่อนที่ทุกคนจะขึ้นปี 4 ก็จะมีการฝึกงานในช่วงปิดเทอมหลังจบปี 3 ด้วย</p>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+	</div>
+	
+
+<!-- QA intro-------------------------------------------------------------------------------------------------------------------------------->
+	
+<div class="container QA">
+	<div class="row text-center"  >
+				
+					<h1> ถามมา...ตอบไป </h1>
+
+		  	</div>
+</div>
+	
+<!-- Question 1 -------------------------------------------------------------------------------------------------------------->
+	
+<div class="container slideQA">		
+	<div class="container d-none d-lg-block">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="img/Q1,1.png" width="500px" height="500px"alt="..." /></div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div>
+                            <h3>Q: ผมไม่ใช่สายกิจกรรม ไม่ชอบทำกิจกรรมเลย <br>
+								ไม่เข้ารับน้องได้ไหมครับ</h3> <br>
+                            <h4>A: การรับน้องนั้น มีขึ้นเพื่อกระชับความสัมพันธ์กับเพื่อนใหม่ที่กำลังจะเข้ามาเรียนในคณะ หรือสาขาวิชาเอก-โทนี้ด้วยกัน 
+								แต่ไม่มีการบังคับให้เข้าร่วมกิจกรรมนี้นะครับ 
+								<br>ดังนั้นไม่ต้องเข้าก็ได้ เพราะไม่มีผลอะไรกับการใช้ชีวิตในสาขาวิชานี้แน่นอน</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			<div class="container d-none d-md-block d-lg-none">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <div class="p-5 text-center"><img class="img-fluid rounded-circle" src="img/Q1,1.png" width="500" height="500" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div>
+                            <h3>Q: ผมไม่ใช่สายกิจกรรม ไม่ชอบทำกิจกรรมเลย <br>
+								ไม่เข้ารับน้องได้ไหมครับ</h3> <br>
+                            <h4>A: การรับน้องนั้น มีขึ้นเพื่อกระชับความสัมพันธ์กับเพื่อนใหม่ที่กำลังจะเข้ามาเรียนในคณะ หรือสาขาวิชาเอก-โทนี้ด้วยกัน 
+								แต่ไม่มีการบังคับให้เข้าร่วมกิจกรรมนี้นะครับ 
+								<br>ดังนั้นไม่ต้องเข้าก็ได้ เพราะไม่มีผลอะไรกับการใช้ชีวิตในสาขาวิชานี้แน่นอน</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			<div class="container d-md-none">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="img/Q1,1.png" width="500" height="500" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div>
+                            <h3>Q: ผมไม่ใช่สายกิจกรรม ไม่ชอบทำกิจกรรมเลย <br>
+								ไม่เข้ารับน้องทั้งของคณะ ทั้งรับน้องของเอก-โทได้ไหมครับ</h3> <br>
+                            <h4>A: การรับน้องนั้น มีขึ้นเพื่อกระชับความสัมพันธ์กับเพื่อนใหม่ที่กำลังจะเข้ามาเรียนในคณะ หรือสาขาวิชาเอก-โทนี้ด้วยกัน 
+								แต่ไม่มีการบังคับให้เข้าร่วมกิจกรรมนี้นะครับ 
+								<br>ดังนั้นไม่ต้องเข้าก็ได้ เพราะไม่มีผลอะไรกับการใช้ชีวิตในสาขาวิชานี้แน่นอน</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Question 2 -------------------------------------------------------------------------------------------------------------->
+	<div class="container d-none d-lg-block">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-4">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="img/Q2.png" width="250" height="250" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div >
+                            <h3>Q: แล้วกิจกรรมรับน้องของคณะ และรับน้องของเอก-โทของที่นี่มีโซตัสไหมคะ</h3> <br>
+                            <h4>A: ที่นี่ไม่มีโซตัสทั้งรับน้องของคณะ และรับน้องของเอก-โท ดังนั้นไม่ต้องกังวลนะคะ</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			<div class="container d-none d-md-block d-lg-none">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-4">
+                        <div class="p-5 text-center"><img class="img-fluid rounded-circle" src="img/Q2.png" width="250" height="250" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div >
+                            <h3>Q: แล้วกิจกรรมรับน้องของคณะ และรับน้องของเอก-โทของที่นี่มีโซตัสไหมคะ</h3> <br>
+                            <h4>A: ที่นี่ไม่มีโซตัสทั้งรับน้องของคณะ และรับน้องของเอก-โท ดังนั้นไม่ต้องกังวลนะคะ</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			<div class="container d-md-none">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-4">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="img/Q2.png" width="250" height="250" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div >
+                            <h3>Q: แล้วกิจกรรมรับน้องของคณะ และรับน้องของเอก-โทของที่นี่มีโซตัสไหมคะ</h3> <br>
+                            <h4>A: ที่นี่ไม่มีโซตัสทั้งรับน้องของคณะ และรับน้องของเอก-โท ดังนั้นไม่ต้องกังวลนะคะ</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+	
+<!-- Question 3 -------------------------------------------------------------------------------------------------------------->
+	
+	<div class="container d-none d-lg-block">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-4">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="img/Q3.png" width="250" height="250" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div >
+                            <h3>Q: เคยได้ยินว่าเอกนี้มี "กิจกรรมห้องสมุดเคลื่อนที่" ซึ่งเป็นกิจกรรมที่เป็นไฮไลท์เด็ดของภาควิชา 
+								แต่ถ้าไม่อยากเข้าร่วมกิจกรรมนี้ จะมีปัญหาอะไรไหมครับ</h3> <br>
+                            <h4>A: จริง ๆ ทางภาควิชาไม่ได้บังคับ แต่ "ขอความร่วมมือ" ดังนั้นเข้าร่วมเพื่อกิจกรรมเอาไว้ใส่ในแฟ้มรวบรวมผลงาน
+								เพื่อสั่งสมประสบการณ์ก็ดีครับ</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			<div class="container d-none d-md-block d-lg-none">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-4">
+                        <div class="p-5 text-center"><img class="img-fluid rounded-circle" src="img/Q3.png" width="250" height="250" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div >
+                            <h3>Q: เคยได้ยินว่าเอกนี้มี "กิจกรรมห้องสมุดเคลื่อนที่" ซึ่งเป็นชื่อเสียงของภาควิชา 
+								แต่ถ้าไม่อยากเข้าร่วมกิจกรรมนี้ จะมีปัญหาอะไรไหมครับ</h3> <br>
+                            <h4>A: จริง ๆ ทางภาควิชาไม่ได้บังคับ แต่ "ขอความร่วมมือ" ดังนั้นเข้าร่วมเพื่อกิจกรรมเอาไว้ใส่ในแฟ้มรวบรวมผลงาน
+								เพื่อสั่งสมประสบการณ์ก็ดีครับ</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			<div class="container d-md-none">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-4">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="img/Q3.png" width="250" height="250" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div >
+                            <h3>Q: เคยได้ยินว่าเอกนี้มี "กิจกรรมห้องสมุดเคลื่อนที่" ซึ่งเป็นชื่อเสียงของภาควิชา 
+								แต่ถ้าไม่อยากเข้าร่วมกิจกรรมนี้ จะมีปัญหาอะไรไหมครับ</h3> <br>
+                            <h4>A: จริง ๆ ทางภาควิชาไม่ได้บังคับ แต่ "ขอความร่วมมือ" ดังนั้นเข้าร่วมเพื่อกิจกรรมเอาไว้ใส่ในแฟ้มรวบรวมผลงาน
+								เพื่อสั่งสมประสบการณ์ก็ดีครับ</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	
+<!-- Question 4 -------------------------------------------------------------------------------------------------------------->
+	<div class="container d-none d-lg-block">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-4">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="img/Q4.png" width="250" height="250" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div >
+                            <h3>Q: ไม่ประสงค์ฝึกงานได้ไหมคะ</h3> <br>
+                            <h4>A: ถ้าเป็นเด็ก"เอก"นี้ จะต้องฝึกงานนะคะ 
+								เพราะต้องนำประสบการณ์ที่ได้จากการฝึกงานไปเรียนต่อในรายวิชา "สัมมนาการฝึกปฏิบัติงาน" เป็นวิชาบังคับ 
+								ซึ่งจะต้องนับเป็นหน่วยกิตก่อนจบการศึกษาด้วย
+								แต่ถ้าเป็นเด็ก "โท" ไม่จำเป็นต้องฝึกงานค่ะ</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			<div class="container d-none d-md-block d-lg-none">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-4">
+                        <div class="p-5 text-center"><img class="img-fluid rounded-circle" src="img/Q4.png" width="250" height="250" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div >
+                            <h3>Q: ไม่ประสงค์ฝึกงานได้ไหมคะ</h3> <br>
+                            <h4>A: ถ้าเป็นเด็ก"เอก"นี้ จะต้องฝึกงานนะคะ 
+								เพราะต้องนำประสบการณ์ที่ได้จากการฝึกงานไปเรียนต่อในรายวิชา "สัมมนาการฝึกปฏิบัติงาน" เป็นวิชาบังคับ 
+								ซึ่งจะต้องนับเป็นหน่วยกิตก่อนจบการศึกษาด้วย
+								แต่ถ้าเป็นเด็ก "โท" ไม่จำเป็นต้องฝึกงานค่ะ</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			<div class="container d-md-none">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-4">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="img/Q4.png" width="250" height="250" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div >
+                            <h3>Q: ไม่ประสงค์ฝึกงานได้ไหมคะ</h3> <br>
+                            <h4>A: ถ้าเป็นเด็ก"เอก"นี้ จะต้องฝึกงานนะคะ 
+								เพราะต้องนำประสบการณ์ที่ได้จากการฝึกงานไปเรียนต่อในรายวิชา "สัมมนาการฝึกปฏิบัติงาน" เป็นวิชาบังคับ 
+								ซึ่งจะต้องนับเป็นหน่วยกิตก่อนจบการศึกษาด้วย
+								แต่ถ้าเป็นเด็ก "โท" ไม่จำเป็นต้องฝึกงานค่ะ</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		
+		</div>		
+<!-- scholarship intro------------------------------------------------------------------------------------------------------>
+	
+<div class=" intro2">
+	<div class="container d-none d-lg-block">
+					<div class="row gx-5 align-items-center">
+						<div class="col-lg-5 order-lg-2">
+							<div class="p-5"><img class="img-fluid rounded-circle" src="img/scholarship.png" width="400" height="400" alt="..." /></div>
+						</div>
+						<div class="col-lg-7 order-lg-1">
+							<div >
+								<h1>ทุนคณะ<br>มีอะไรบ้าง?</h1>
+								<p>คณะอักษรศาสตร์ มหาวิทยาลัยศิลปากรของเรา มีทุนการศึกษามากมายเพื่อสนับสนุนและช่วยเหลือนักศึกษาของเรา
+									แต่นักศึกษาส่วนมาก ยังไม่ทราบว่ามีทุนเหล่านี้อยู่ด้วย 
+									ดังนั้น พวกเรามาดูกันซิว่า ทุนเหล่านั้น มีทุนอะไรกันบ้างน้าาา
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>	
+		
+				<div class="container d-none d-md-block d-lg-none">
+					<div class="row gx-5 align-items-center">
+						<div class="col-lg-5 order-lg-2">
+							<div class="p-5 text-center"><img class="img-fluid center" src="img/scholarship.png" width="400" height="400" alt="..." /></div>
+						</div>
+						<div class="col-lg-7 order-lg-1">
+							<div >
+								<h1 class="text-center">ทุนคณะ<br>มีอะไรบ้าง?</h1>
+								<p>ที่คณะอักษรศาสตร์ มหาวิทยาลัยศิลปากรของเรา มีทุนการศึกษามากมายเพื่อสนับสนุนและช่วยเหลือนักศึกษาของเรา
+									แต่นักศึกษาส่วนมาก ยังไม่ทราบว่ามีทุนเหล่านี้อยู่ด้วย 
+									ดังนั้น พวกเรามาดูกันซิว่า ทุนเหล่านั้น มีทุนอะไรกันบ้างน้าาา
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+	<!-- sm-none -->
+		<div class="container d-md-none">
+			<div class="row gx-5 align-items-center">
+				<div class="col-lg-5 order-lg-2">
+					<div class="p-5"><img class="img-fluid center" src="img/scholarship.png" width="400" height="400" alt="..." /></div>
+				</div>
+				<div class="col-lg-7 order-lg-1">
+					<div >
+						<h1 class="text-center">ทุนคณะ<br>มีอะไรบ้าง? </h1>
+						<p>ที่คณะอักษรศาสตร์ มหาวิทยาลัยศิลปากรของเรา มีทุนการศึกษามากมายเพื่อสนับสนุนและช่วยเหลือนักศึกษาของเรา
+							แต่นักศึกษาส่วนมาก ยังไม่ทราบว่ามีทุนเหล่านี้อยู่ด้วย 
+							ดังนั้น พวกเรามาดูกันซิว่า ทุนเหล่านั้น มีทุนอะไรกันบ้างน้าาา
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+</div>
+</div>
+	
+
+<!-- scholarship list 1------------------------------------------------------------------------------------------------------>
+	<div class="slidescholar">
+<div class="container">
+	<div class="row">
+		<div class="container">
+			<div class="row">
+			<div class="col"><br>
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+				<div class="col">
+					<div class="card h-100">
+						<div class="flip-box-inner"></div>
+						<img src="img/artsu.png" class="card-img-top zoom" alt="...">
+					<div class="card-body">
+						<h3 class="card-title text-center">ทุนการศึกษาคณะอักษรศาสตร์</h3>
+						<p class="card-text"></p>
+					</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100">
+					<img src="img/su.png" class="card-img-top zoom" alt="...">
+					<div class="card-body">
+						<h3 class="card-title text-center">ทุนช่วยเหลือเยียวยา<br>เพื่อลดผลกระทบจากวิกฤต<br>การแพร่ระบาดของโรคติดเชื้อไวรัสโคโรนา 2019</h3>
+						<p class="card-text"></p>
+					</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100">
+					<img src="img/alumni.png" class="card-img-top zoom" alt="...">
+					<div class="card-body">
+						<h3 class="card-title text-center">ทุนการศึกษาสมาคมศิษย์เก่า</h3>
+						<p class="card-text"></p>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		</div>      
+	</div>
+	</div>
+</div>
+	</div>
+
+		
+	
+<!-- scholarship list 2------------------------------------------------------------------------------------------------------>	
+	
+<div class="container">
+	<div class="col"><br>
+	<div class="row row-cols-1 row-cols-md-2 g-4">
+	<div class="col">
+		<div class="card h-100">
+			<img src="img/กยศ.png" class="card-img-top zoom" alt="...">
+		<div class="card-body">
+			<h3 class="card-title text-center">ทุนกยศ.</h3>
+			<p class="card-text"></p>
+		</div>
+		</div>
+</div>
+<div class="col">
+	<div class="card h-100">
+	<img src="img/กรอ.png" class="card-img-top zoom" alt="...">
+	<div class="card-body">
+		<h3 class="card-title text-center">ทุนกรอ.</h3>
+		<p class="card-text"></p>
+	</div>
+	</div>
+</div>
+	</div>
+	</div>
+	</div>
+	
+
+</div>
+
+	<!-- อาชีพ ------------------------------------------------------------------------------------------>
+	
+<!-- เกริ่นอาชีพ -->
+<div id="jobintro" class="container intro2">
+
+<!-- lg -->
+    <div class="row d-none d-lg-block">
+		<div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 order-lg-2">
+                        <div class="p-5"><img src="img/where.png" class="img-fluid" ></div>
+                    </div>
+                    <div class="col-lg-7 order-lg-1">
+                        <div >
+                            <h1>เรียนจบแล้ว... <br> ไปไหน?</h1>
+                            <p>ตามมาดูกันดีกว่าว่าหลังจากเรียนจบสาขาวิชาเอกนี้ไปแล้ว<br>
+                                เราสามารถนำความรู้ที่ได้รับจากการเรียนไปประกอบอาชีพใดได้บ้าง</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+<!-- md none -->
+	<div class="row d-none d-md-block d-lg-none">
+		<div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 order-lg-2">
+                        <div class="p-5 text-center"><img src="img/where.png" class="img-fluid center"></div>
+                    </div>
+                    <div class="col-lg-7 order-lg-1">
+                        <div >
+                            <h1 class="text-center">เรียนจบแล้ว... <br>ไปไหน?</h1>
+                            <p>ตามมาดูกันดีกว่าว่าหลังจากเรียนจบสาขาวิชาเอกนี้ไปแล้ว<br>
+                                เราสามารถนำความรู้ที่ได้รับจากการเรียนไปประกอบอาชีพใดได้บ้าง</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+	<!-- sm-none -->
+	<div class="row d-md-none">
+		<div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 order-lg-2">
+                        <div class="p-5"><img src="img/where.png" class="img-fluid center"></div>
+                    </div>
+                    <div class="col-lg-7 order-lg-1">
+                        <div >
+                            <h1 class="text-center">เรียนจบแล้ว... <br>ไปไหน?</h1>
+                            <p>ตามมาดูกันดีกว่าว่าหลังจากเรียนจบสาขาวิชาเอกนี้ไปแล้ว<br>
+                                เราสามารถนำความรู้ที่ได้รับจากการเรียนไปประกอบอาชีพใดได้บ้าง</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+</div>
+
+<!-- ข้อความอาชีพ 1 -->
+<div class="slidejob1">
+	<div class="row">
+		<div class="container">
+			<div class="row">
+				<div class="col"><br>
+				<div class="row align-items-center">
+					<div class="col-md-4 text-center"><img src="img/book.png" class="zoom"
+						alt=""/> <h1>บรรณารักษ์</h1><h2>ในสถาบันบริการสารสนเทศหรือห้องสมุด<br>ทั้งของรัฐบาลและเอกชน</h2><br><br></div>
+					<div class="col-md-4 text-center"><img src="img/database-management.png" class="zoom"
+						alt="" height="150 px" width="150 px"/> <h1>นักจัดการสารสนเทศ</h1><h2>และระบบสารสนเทศในหน่วยงานทั้งของรัฐบาลและเอกชน</h2><br><br></div>
+					<div class="col-md-4 text-center"><img src="img/database.png" class="zoom" alt="" /> <h1>ผู้จัดสร้างฐานข้อมูล</h1><h2>และผู้บันทึกข้อมูลของหน่วยงาน<br><br><br><br></h2></div> 
+				</div>	
+			</div>
+			</div>
+		</div>
+  </div>
+	
+  <!-- ข้อความอาชีพ 2 -->
+ 
+	<div class="row">
+		<div class="container">
+			<div class="row">
+				<div class="col"><br>
+				<div class="row align-items-center">
+					<div class="col-md-4 text-center"><img src="img/archive.png" class="zoom" 
+						alt="" height="150 px" width="150 px"/> <h1>นักเอกสารจดหมายเหตุ</h1><h2>ของหน่วยงาน</h2></div>
+					<div class="col-md-4 text-center"><img src="img/data-service.png" class="zoom"
+						alt="" height="150 px" width="150 px"/> <h1>พนักงาน<br>ให้บริการข้อมูล</h1><h2>สารสนเทศเชิงพาณิชย์</h2></div>
+					<div class="col-md-4 text-center"><img src="img/web-programming.png" class="zoom"
+						alt="" height="150 px" width="150 px"/> <h1>อาชีพอื่น ๆ<br>ที่เกี่ยวข้อง</h1><h2>กับการจัดการและงานบริการสารสนเทศ เช่น ผู้ดูแลเว็บไซต์</h2></div> 
+					
+				</div>
+	
+			</div>
+			</div>
+		</div>
+  	</div>
+
+</div>
+
+<!-- หน้าร้องเรียน ------------------------------------------------------------------------------------------>
+<div id="form" class="row intro3">
+	<!-- lg-none -->
+	<div class="container d-none d-lg-block">
+	  <div class="row">
+		  <div class="col-md-6 bg align-items-center"><img src="img/06.3.png" class ="img-fluid" height="360 px" width="520 px"/> </div>
+		  <div class="col-md-6 bg">
+			<div class="p-1">
+			  <div class="bg">
+				<h1>พบเจอปัญหาหนักใจ<br>ให้ติดต่อเรา</h1>
+				<div class="container">
+					<p>มีเรื่องหนักใจ อยากปรึกษาหรือร้องเรียนกับทางภาควิชา<br> 
+					จิ้มที่ปุ่มด้านล่างเพื่อเข้าไปบอกเล่าเก้าสิบได้เลย</p>
+				  </div>
+			  </div>
+			</div>
+		<!-- btn -->
+				<div class="container center">
+					<button type="button" class="btn btn-info center dark-button">คลิก<br>เพื่อไปยังฟอร์ม</button>
+				</div>
+			</div>
+			</div>
+		</div>
+
+<!-- md-none -->
+<div class="container d-none d-md-block d-lg-none">
+	<div class="row">
+		<div class="col-md-6 bg align-items-center"><img src="img/06.3.png" class ="img-fluid" height="360 px" width="520 px"/> </div>
+		<div class="col-md-6 bg">
+		  <div class="p-1">
+			<div class="bg">
+			  <h1 class="text-center">พบเจอปัญหาหนักใจ<br>ให้ติดต่อเรา</h1>
+			  <div class="container">
+				<p>มีเรื่องหนักใจ อยากปรึกษาหรือร้องเรียนกับทางภาควิชา<br> 
+				จิ้มที่ปุ่มด้านล่างเพื่อเข้าไปบอกเล่าเก้าสิบได้เลย</p>
+			  </div>
+			</div>
+		  </div>
+	  <!-- btn -->
+			  <div class="container center">
+				  <button type="button" class="btn btn-info center">คลิก<br>เพื่อไปยังฟอร์ม</button>
+			  </div>
+		  </div>
+		  </div>
+	  </div>
+
+	<!-- sm-none -->
+	<div class="container d-md-none">
+		<div class="container">
+			<div class="col-md-6 bg align-items-center"><img src="img/06.3.png" class ="img-fluid" height="360 px" width="520 px"/></div>
+			<div class="col-md-6 bg">
+			  <div class="p-1">
+				<div class="bg">
+				  <h1 class="text-center">พบเจอปัญหาหนักใจ<br>ให้ติดต่อเรา</h1>
+				  <div class="container">
+					  <p>มีเรื่องหนักใจ อยากปรึกษาหรือร้องเรียนกับทางภาควิชา<br> 
+					  จิ้มที่ปุ่มด้านล่างเพื่อเข้าไปบอกเล่าเก้าสิบได้เลย</p>
+					</div>
+					
+				</div>
+			  </div>
+		  <!-- btn -->
+				  <div class="container center">
+					  <button type="button" class="btn btn-info center dark-button">คลิก<br>เพื่อไปยังฟอร์ม</button>
+				  </div>
+			  </div>
+			  </div>
+		  </div>
+
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+	<!-- Copyright -->
+	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+	  ภาควิชาบรรณารักษศาสตร์ คณะอักษรศาสตร์ มหาวิทยาลัยศิลปากร
+	  <a class="text-dark" href="http://www.arts.su.ac.th/%e0%b8%ab%e0%b8%99%e0%b9%88%e0%b8%a7%e0%b8%a2%e0%b8%87%e0%b8%b2%e0%b8%99/%e0%b8%a0%e0%b8%b2%e0%b8%84%e0%b8%a7%e0%b8%b4%e0%b8%8a%e0%b8%b2%e0%b8%9a%e0%b8%a3%e0%b8%a3%e0%b8%93%e0%b8%b2%e0%b8%a3%e0%b8%b1%e0%b8%81%e0%b8%a9%e0%b8%a8%e0%b8%b2%e0%b8%aa%e0%b8%95%e0%b8%a3%e0%b9%8c/">
+		arts.su.ac.th</a>
+	</div>
+	<!-- Copyright -->
+  </footer>
+
+<!---------------------------------------------------------------------------------------------------------------------->	
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+
+<script>
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) 
+{return new bootstrap.Tooltip(tooltipTriggerEl)})
+
+
+</script>
+
+</script>
+</body>
+</html>

@@ -37,6 +37,11 @@ h1 {
   background-size: cover;
 }
 
+.fac{
+	line-height: 53px;
+}
+
+
   /*--XL-------------------*/
   @media (min-width: 1200px) {
     .welcome {
@@ -899,7 +904,7 @@ h1 {
 
 /*bg's timeline*/
 .bg-timeline{
-background: #7cc4cb; 
+background: white;  
 }
 
 .welcome h1 .mb-1{
@@ -953,10 +958,6 @@ a{
 	text-decoration-style: dotted;
 	text-decoration-color: #faf1f0;
 }
-.fac{
-	line-height: 53px;
-}
-
 /*ตรงรูปภาพที่มันซูมเด่นขึ้นมา */
 .zoom {
   padding: 50px;
