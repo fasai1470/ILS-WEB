@@ -870,11 +870,11 @@ font-family: 'Prompt', sans-serif;
     font-family:'Prompt', sans-serif;
   }
   .timeline1 h6, .timeline1.h6 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Circular";
   }
   .timeline1 h5, .timeline1 .h5 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Circular";
   }
 }
