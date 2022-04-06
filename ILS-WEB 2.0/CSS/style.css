@@ -849,14 +849,18 @@ h1 {
   .timeline1 {
     height: 50vh;
   }
-  .timeline1 a, .timeline1 .a {
+  .timeline1 p, .timeline1 .p {
     font-size: 2rem;
     color: rgb(129, 129, 129);
     font-family:'Prompt', sans-serif;
   }
-  .timeline1 h2, .timeline1 .h2 {
-    font-size: 3.2rem;
+  .timeline1 h6, .timeline1 .h6 {
+    font-size: 1.5rem;
     color: #0d864b;
+    font-family: "Circular";
+  }
+  .timeline1 h5, .timeline1 .h5 {
+    font-size: 1.5rem;
     font-family: "Circular";
   }
 }
@@ -865,14 +869,18 @@ h1 {
   .timeline1 {
     height: 50vh;
   }
-  .timeline1 a, .timeline1 .a {
+  .timeline1 p, .timeline1 .p {
     font-size: 2rem;
     color: rgb(129, 129, 129);
     font-family:'Prompt', sans-serif;
   }
-  .timeline1 h2, .timeline1 .h2 {
+  .timeline1 h6, .timeline1 .h6 {
     font-size: 3.2rem;
     color: #0d864b;
+    font-family: "Circular";
+  }
+  .timeline1 h5, .timeline1 .h5 {
+    font-size: 1.5rem;
     font-family: "Circular";
   }
 }
@@ -891,6 +899,10 @@ h1 {
     color: #0d864b;
     font-family: "Circular";
   }
+  .timeline1 h5, .timeline1 .h5 {
+    font-size: 3.2rem;
+    font-family: "Circular";
+  }
 }
 /*--SM-------------------*/
 @media only screen and (min-width: 576px) and (max-width: 767px){
@@ -905,6 +917,10 @@ h1 {
   .timeline1 h2, .timeline1 .h2 {
     font-size: 2rem;
     color: #0d864b;
+    font-family: "Circular";
+  }
+  .timeline1 h5, .timeline1 .h5 {
+    font-size: 3.2rem;
     font-family: "Circular";
   }
 }
@@ -923,11 +939,15 @@ h1 {
     color: #0d864b;
     font-family: "Circular";
   }
+  .timeline1 h5, .timeline1 .h5 {
+    font-size: 3.2rem;
+    font-family: "Circular";
+  }
 }
 
 /*bg's timeline*/
 .bg-timeline{
-background: white;  
+background: #faf1f0;  
 }
 
 .welcome h1 .mb-1{
