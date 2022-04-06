@@ -291,6 +291,9 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.QA h1 {
+  color: #7cc4cb;
+}
 
   /*--XL-------------------*/
 @media (min-width: 1200px) {
@@ -299,7 +302,6 @@ h1 {
   }
   .QA h1 {
     font-size: 100px;
-    color: #7cc4cb;
   }
 }
 /*--LG-------------------*/
@@ -309,7 +311,6 @@ h1 {
   }
   .QA h1 {
     font-size: 100px;
-    color: #7cc4cb;
   }
 }
 /*--MD-------------------*/
@@ -319,7 +320,6 @@ h1 {
   }
   .QA h1 {
     font-size: 100px;
-    color: #7cc4cb;
   }
 }
 /*--SM-------------------*/
@@ -329,7 +329,6 @@ h1 {
   }
   .QA h1 {
     font-size: 75px;
-    color: #7cc4cb;
   }
 }
 /*--XS-------------------*/
@@ -339,7 +338,6 @@ h1 {
   }
   .QA h1 {
     font-size: 75px;
-    color: #7cc4cb;
   }
 }
 
@@ -377,13 +375,9 @@ h1 {
   }
   .slideQA h3, .slideQA .h3 {
     font-size: 1.8rem;
-    /*color: #ff5e00;*/
-    font-family: 'Prompt', sans-serif;
   }
   .slideQA h4, .slideQA .h4 {
     font-size: 1.8rem;
-    /*color: #0400ffab;*/
-    font-family: 'Prompt', sans-serif;
   }
 }
 /*--LG-------------------*/
@@ -393,11 +387,9 @@ h1 {
   }
   .slideQA h3, .slideQA .h3 {
     font-size: 1.8rem;
-    font-family: 'Prompt', sans-serif;
   }
   .slideQA h4, .slideQA .h4 {
     font-size: 1.8rem;
-    font-family: 'Prompt', sans-serif;
   }
 }
 /*--MD-------------------*/
@@ -407,11 +399,9 @@ h1 {
   }
   .slideQA h3, .slideQA .h3 {
     font-size: 2rem;
-    font-family: 'Prompt', sans-serif;
   }
   .slideQA h4, .slideQA .h4 {
     font-size: 2rem;
-    font-family: 'Prompt', sans-serif;
   }
 }
 /*--SM-------------------*/
@@ -421,11 +411,9 @@ h1 {
   }
   .slideQA h3, .slideQA .h3 {
     font-size: 1.3rem;
-    font-family: 'Prompt', sans-serif;
   }
   .slideQA h4, .slideQA .h4 {
     font-size: 1.3rem;
-    font-family: 'Prompt', sans-serif;
   }
 }
 /*--XS-------------------*/
@@ -435,11 +423,9 @@ h1 {
   }
   .slideQA h3, .slideQA .h3 {
     font-size: 1.3rem;
-    font-family: 'Prompt', sans-serif;
   }
   .slideQA h4, .slideQA .h4 {
     font-size: 1.3rem;
-    font-family: 'Prompt', sans-serif;
   }
 }
 /*--Scholarship----------------------------------------------------------------------------------------------------------*/
@@ -457,6 +443,10 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.intro2 p {
+  font-family: 'Prompt', sans-serif;
+}
+
 /*--XL-------------------*/
 @media (min-width: 1200px) {
   .intro2 {
@@ -468,7 +458,6 @@ h1 {
   }
 	.intro2 p {
 	font-size: 1.5rem;
-  font-family: 'Prompt', sans-serif;
 }
 /*--LG-------------------*/
 }@media only screen and (min-width: 992px) and (max-width: 1199px){
@@ -481,7 +470,6 @@ h1 {
   }
 	.intro2 p {
 	font-size: 1.5rem;
-  font-family: 'Prompt', sans-serif;
 }
 }
 /*--MD-------------------*/
@@ -495,8 +483,6 @@ h1 {
   }
 	.intro2 p {
 	font-size: 2rem;
-  font-family: 'Prompt', sans-serif;
-
 }
 }
 /*--SM-------------------*/
@@ -510,7 +496,6 @@ h1 {
   }
 	.intro2 p {
 	font-size: 1.5rem;
-  font-family: 'Prompt', sans-serif;
 }
 }
 /*--XS-------------------*/
@@ -524,7 +509,6 @@ h1 {
   }
 	.intro2 p {
 	font-size: 1.2rem;
-  font-family: 'Prompt', sans-serif;
 }
 }
 
@@ -598,6 +582,12 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.jobintro h1, .jobintro .h1 {
+  color: #7cc4cb;
+}
+.jobintro p {
+font-family: 'Prompt', sans-serif;
+}
 
 
 /*--XL-------------------*/
@@ -607,14 +597,12 @@ h1 {
   }
   .jobintro h1, .jobintro .h1 {
     font-size: 4.5rem;
-    line-height:6rem !important;
-    color: #7cc4cb;
-  
+    line-height:6rem !important; 
   }
 	.jobintro p {
 	font-size: 1.5rem;
-  font-family: 'Prompt', sans-serif;
 }
+
 /*--LG-------------------*/
 }@media only screen and (min-width: 992px) and (max-width: 1199px){
   .jobintro {
@@ -623,11 +611,9 @@ h1 {
   .jobintro h1, .jobintro .h1 {
     font-size: 7.5rem;
     line-height:5.5rem !important;
-    color: #7cc4cb;
   }
 	.jobintro p {
 	font-size: 1.5rem;
-  font-family: 'Prompt', sans-serif;
 }
 }
 /*--MD-------------------*/
@@ -638,12 +624,9 @@ h1 {
   .jobintro h1, .jobintro .h1 {
     font-size: 6rem;
     line-height:6rem !important;
-    color: #7cc4cb;
   }
 	.jobintro p {
 	font-size: 2rem;
-  font-family: 'Prompt', sans-serif;
-
 }
 }
 /*--SM-------------------*/
@@ -654,11 +637,9 @@ h1 {
   .jobintro h1, .jobintro .h1 {
     font-size: 4rem;
     line-height:5.5rem !important;
-    color: #7cc4cb;
   }
 	.jobintro p {
 	font-size: 1.5rem;
-  font-family: 'Prompt', sans-serif;
 }
 }
 /*--XS-------------------*/
@@ -669,11 +650,9 @@ h1 {
   .jobintro h1, .jobintro .h1 {
     font-size: 4rem;
     line-height:4.5rem !important;
-    color: #7cc4cb;
   }
 	.jobintro p {
 	font-size: 1.2rem;
-  font-family: 'Prompt', sans-serif;
 }
 }
 
@@ -751,6 +730,14 @@ h1 {
   background-size: cover;
 }
 
+.intro3 h1, .intro3 .h1 {
+  color: #7cc4cb;
+}
+.intro3 p, .intro3 .p {
+  color: #000000;
+  font-family: 'Prompt', sans-serif;
+}
+
 /*--XL-------------------*/
 @media (min-width: 1200px) {
   .intro3 {
@@ -758,12 +745,9 @@ h1 {
   }
   .intro3 h1, .intro3 .h1 {
     font-size: 4rem;
-    color: #7cc4cb;
   }
   .intro3 p, .intro3 .p {
     font-size: 3rem;
-    color: #000000;
-    font-family: 'Prompt', sans-serif;
   }
 }
 /*--LG-------------------*/
@@ -773,12 +757,9 @@ h1 {
   }
   .intro3 h1, .intro3 .h1 {
     font-size: 4rem;
-    color: #7cc4cb;
   }
   .intro3 p, .intro3 .p {
     font-size: 3rem;
-    color: #000000;
-    font-family: 'Prompt', sans-serif;
   }
 }
 /*--MD-------------------*/
@@ -788,12 +769,9 @@ h1 {
   }
   .intro3 h1, .intro3 .h1 {
     font-size: 3rem;
-    color: #7cc4cb;
   }
   .intro3 p, .intro3 .p {
     font-size: 1.5rem;
-    color: #000000;
-    font-family: 'Prompt', sans-serif;
   }
 }
 /*--SM-------------------*/
@@ -803,13 +781,10 @@ h1 {
   }
   .intro3 h1, .intro3 .h1 {
     font-size: 2.5rem;
-    color: #7cc4cb;
     line-height: 4.5rem;
   }
   .intro3 p, .intro3 .p {
     font-size: 1.2rem;
-    color: #000000;
-    font-family: 'Prompt', sans-serif;
   }
 }
 /*--XS-------------------*/
@@ -819,13 +794,10 @@ h1 {
   }
   .intro3 h1, .intro3 .h1 {
     font-size: 2rem;
-    color: #7cc4cb;
     line-height: 4rem;
   }
   .intro3 p, .intro3 .p {
     font-size: 1.2rem;
-    color: #000000;
-    font-family: 'Prompt', sans-serif;
   }
 }
 /*---------------------------------------------------------------------------------------------*/
@@ -844,6 +816,14 @@ h1 {
   background-size: cover;
 }
 
+.timeline1 p, .timeline1 .p {
+  color: rgb(129, 129, 129);
+}
+.timeline1 h6, .timeline1 .h6 {
+  color: #0d864b;
+}
+
+
 /*--XL-------------------*/
 @media (min-width: 1200px) {
   .timeline1 {
@@ -851,12 +831,10 @@ h1 {
   }
   .timeline1 p, .timeline1 .p {
     font-size: 2rem;
-    color: rgb(129, 129, 129);
     font-family:'Prompt', sans-serif;
   }
   .timeline1 h6, .timeline1 .h6 {
     font-size: 1.5rem;
-    color: #0d864b;
     font-family: "Circular";
   }
   .timeline1 h5, .timeline1 .h5 {
@@ -871,12 +849,10 @@ h1 {
   }
   .timeline1 p, .timeline1 .p {
     font-size: 2rem;
-    color: rgb(129, 129, 129);
     font-family:'Prompt', sans-serif;
   }
   .timeline1 h6, .timeline1 .h6 {
     font-size: 3.2rem;
-    color: #0d864b;
     font-family: "Circular";
   }
   .timeline1 h5, .timeline1 .h5 {
@@ -891,12 +867,10 @@ h1 {
   }
   .timeline1 a, .timeline1 .a {
     font-size: 1.5rem;
-    color: #eee;
     font-family:'Prompt', sans-serif;
   }
   .timeline1 h2, .timeline1.h2 {
     font-size: 2.2rem;
-    color: #0d864b;
     font-family: "Circular";
   }
   .timeline1 h5, .timeline1 .h5 {
@@ -911,12 +885,10 @@ h1 {
   }
   .timeline1 a, .timeline1 .a {
     font-size: 1rem;
-    color: #eee;
     font-family:'Prompt', sans-serif;
   }
   .timeline1 h2, .timeline1 .h2 {
     font-size: 2rem;
-    color: #0d864b;
     font-family: "Circular";
   }
   .timeline1 h5, .timeline1 .h5 {
@@ -932,11 +904,9 @@ h1 {
   .timeline1 a, .timeline1 .a {
     font-size: 1rem;
     font-family:'Prompt', sans-serif;
-    color: #eee;
   }
   .timeline1 h2, .timeline1 .h2 {
     font-size: 2rem;
-    color: #0d864b;
     font-family: "Circular";
   }
   .timeline1 h5, .timeline1 .h5 {
