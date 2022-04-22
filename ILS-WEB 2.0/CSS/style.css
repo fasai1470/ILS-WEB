@@ -1012,3 +1012,18 @@ a{
 	font-size: 64px;
 	font-family: "Circular";
 }
+
+/*fade*/
+.tag {
+}
+
+.tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
