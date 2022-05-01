@@ -47,13 +47,13 @@ h1 {
 }
 .welcome h2, .welcome .h2 {
   font-size: 2.5rem;
-  color: #7cc4cbe7;
+  color: #7cc4cbb0;
   margin: 0;
   padding: 0;
 }
 .welcome h3, .welcome .h3 {
   font-size: 2rem;
-  color: #7cc4cb;
+  color: #7cc4cbb3;
   margin: 0;
   padding: 0;
 }
@@ -71,23 +71,14 @@ h1 {
 
     .welcome h1, .welcome .h1 {
       font-size: 6rem;
-      color: #7cc4cb;
-      margin: 0;
-      padding: 0;
       line-height:4.5rem !important;
       
     }
     .welcome h2, .welcome .h2 {
       font-size: 4.5rem;
-      color: #7cc4cbe7;
-      margin: 0;
-      padding: 0;
     }
     .welcome h3, .welcome .h3 {
       font-size: 3rem;
-      color: #7cc4cb;
-      margin: 0;
-      padding: 0;
     }
   }
   /*--LG-------------------*/
