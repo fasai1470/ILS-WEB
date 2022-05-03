@@ -23,7 +23,7 @@ h1 {
 /*Header ตกแต่งสไลด์ที่ 1 คือหน้า welcome*/
 
 .welcome {
-  min-height: 30rem;
+  min-height: 50rem;
   position: relative;
   display: table;
   width: 100%;
@@ -60,7 +60,7 @@ h1 {
   /*--XL-------------------*/
   @media (min-width: 1200px) {
     .welcome {
-      height: 80vh;
+    height: 100vh;
     }
 
     .welcome h1 {
@@ -79,12 +79,11 @@ h1 {
   }@media only screen and (min-width: 992px) and (max-width: 1199px){
 
     .welcome {
-      height: 80vh;
+      height: 100vh;
     }
     .welcome h1 {
       font-size: 6rem;
 
-      
     }
     .welcome h2 {
       font-size: 5.5rem;
