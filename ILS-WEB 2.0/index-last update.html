@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>LIS-SU</title>
-<meta name ="keywords" content ="ILS, SU, Silpakorn, Information and Library Science, Library, คณะอักษรศาสตร์ มหาวิทยาลัยศิลปากร, เอกสารสนเทศศาสตร์และบรรณารักษศาสตร์, เอกบรรณ" />
+<meta name ="keywords" content ="ILS,SU,Silpakorn,Information and Library Science,Library,คณะอักษรศาสตร์ มหาวิทยาลัยศิลปากร,เอกสารสนเทศศาสตร์และบรรณารักษศาสตร์,เอกบรรณ,บรรณารักษ์,สารสนเทศ,Information" />
 <meta name ="description" content =" ">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -41,7 +41,7 @@ color: #7cc4cb;
 }
 
 body { font-family: "Circular" !important; 
-		background-color: #faf1f0;		
+		background-color: #fbf3f2;		
 		}
         
 .light {
@@ -262,6 +262,7 @@ body {
 
 .art {color: #7cc4cb;} 		/*สีตัวอักษร ฟ้า*/
 .bg{ background: #faf1f0;} 		/*สีพื้นหลัง เนื้อ*/
+.bg2{ background: #fbf3f2;} 		/*สีพื้นหลัง เนื้ออ่อน*/
 .bgsu{ background: #007a6d;} 	/*สีพื้นหลัง มหาวิทยาลัย*/
 
 
@@ -289,7 +290,7 @@ h1 {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-	background: #faf1f0;
+	background: #fbf3f2;
   /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
   background-position: center center;
   background-repeat: no-repeat;
@@ -403,9 +404,9 @@ h1 {
     }
   }
 
-/*-- Lifestyleintro ตกแต่งหัวข้อ------------------------------------*/
+/*-- Timeline intro------------------------------------*/
 
-.intro {
+.TLintro {
   min-height: 20rem;
   position: relative;
   display: table;
@@ -413,18 +414,18 @@ h1 {
   height: auto;
   padding-top: 12rem;
   padding-bottom: 0rem;
-	background: #faf1f0;
+	background: #fbf3f2;
   /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-  .intro h1 {
+  .TLintro h1 {
     font-size: 7.5rem;
     line-height:6rem !important;
   
   }
-	.intro p {
+	.TLintro p {
 	font-size: 1.5rem;
   font-family: 'Prompt', sans-serif;
 }
@@ -432,67 +433,161 @@ h1 {
 }
 /*--XL-------------------*/
 @media (min-width: 1200px) {
-  .intro {
+  .TLintro {
     height: 65vh;
   }
-  .intro h1 {
+  .TLintro h1 {
     font-size: 7.5rem;
     line-height:6rem !important;
   
   }
-	.intro p {
+	.TLintro p {
 	font-size: 1.5rem;
 }
 /*--LG-------------------*/
 }@media only screen and (min-width: 992px) and (max-width: 1199px){
-  .intro {
+  .TLintro {
     height: 65vh;
   }
-  .intro h1 {
+  .TLintro h1 {
     font-size: 7.5rem;
     line-height:5.5rem !important;
   }
-	.intro p {
+	.TLintro p {
 	font-size: 1.5rem;
 
 }
 }
 /*--MD-------------------*/
 @media only screen and (min-width: 768px) and (max-width: 991px){
-  .intro {
+  .TLintro {
     height: 20vh;
   }
-  .intro h1 {
+  .TLintro h1 {
     font-size: 8rem;
     line-height:6rem !important;
   }
-	.intro p {
+	.TLintro p {
 	font-size: 2rem;
 }
 }
 /*--SM-------------------*/
 @media only screen and (min-width: 576px) and (max-width: 767px){
-  .intro {
+  .TLintro {
     height: 50vh;
   }
-  .intro h1 {
+  .TLintro h1 {
     font-size: 4rem;
     line-height:3.5rem !important;
   }
-	.intro p {
+	.TLintro p {
 	font-size: 1.5rem;
 }
 }
 /*--XS-------------------*/
 @media only screen and (max-width: 575px){
-  .intro {
+  .TLintro {
     height: 50vh;
   }
-  .intro h1 {
+  .TLintro h1 {
     font-size: 4rem;
     line-height:3.5rem !important;
   }
-	.intro p {
+	.TLintro p {
+	font-size: 1.2rem;
+}
+}
+
+/*-- Lifestyleintro ตกแต่งหัวข้อ------------------------------------*/
+
+.Lintro {
+  min-height: 20rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+	background: #fbf3f2;
+  /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  .Lintro h1 {
+    font-size: 7.5rem;
+    line-height:6rem !important;
+  
+  }
+	.Lintro p {
+	font-size: 1.5rem;
+  font-family: 'Prompt', sans-serif;
+}
+  
+}
+/*--XL-------------------*/
+@media (min-width: 1200px) {
+  .Lintro {
+    height: 65vh;
+  }
+  .Lintro h1 {
+    font-size: 7.5rem;
+    line-height:6rem !important;
+  
+  }
+	.TLintro p {
+	font-size: 1.5rem;
+}
+/*--LG-------------------*/
+}@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .Lintro {
+    height: 65vh;
+  }
+  .Lintro h1 {
+    font-size: 7.5rem;
+    line-height:5.5rem !important;
+  }
+	.Lintro p {
+	font-size: 1.5rem;
+
+}
+}
+/*--MD-------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .Lintro {
+    height: 20vh;
+  }
+  .Lintro h1 {
+    font-size: 8rem;
+    line-height:6rem !important;
+  }
+	.Lintro p {
+	font-size: 2rem;
+}
+}
+/*--SM-------------------*/
+@media only screen and (min-width: 576px) and (max-width: 767px){
+  .Lintro {
+    height: 50vh;
+  }
+  .Lintro h1 {
+    font-size: 4rem;
+    line-height:3.5rem !important;
+  }
+	.Lintro p {
+	font-size: 1.5rem;
+}
+}
+/*--XS-------------------*/
+@media only screen and (max-width: 575px){
+  .Lintro {
+    height: 50vh;
+  }
+  .Lintro h1 {
+    font-size: 4rem;
+    line-height:3.5rem !important;
+  }
+	.Lintro p {
 	font-size: 1.2rem;
 }
 }
@@ -506,7 +601,7 @@ h1 {
   height: auto;
   padding-top: 4.5rem;
   padding-bottom: 0rem;
-  background: #faf1f0;
+  background: #fbf3f2;
   /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
   background-position: center center;
   background-repeat: no-repeat;
@@ -571,7 +666,7 @@ h1 {
   height: auto;
   padding-top: 2rem;
   padding-bottom: 4rem;
-	background: #faf1f0;
+	background: #fbf3f2;
   /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
   background-position: center center;
   background-repeat: no-repeat;
@@ -647,85 +742,85 @@ h1 {
   }
 }
 /*--Scholarship----------------------------------------------------------------------------------------------------------*/
-.intro2 {
+.Sintro {
   min-height: 20rem;
   position: relative;
   display: table;
   width: 100%;
   height: auto;
   padding-top: 6rem;
-  padding-bottom: 0rem;
-	background: #faf1f0;
+  padding-bottom: 6rem;
+	background: #fbf3f2;
   /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.intro2 p {
+.Sintro p {
   font-family: 'Prompt', sans-serif;
 }
 
 /*--XL-------------------*/
 @media (min-width: 1200px) {
-  .intro2 {
+  .Sintro {
     height: 45vh;
   }
-  .intro2 h1 {
+  .Sintro h1 {
     font-size: 7.5rem;
     line-height: 6.5rem;
   }
-	.intro2 p {
+	.Sintro p {
 	font-size: 1.5rem;
 }
 /*--LG-------------------*/
 }@media only screen and (min-width: 992px) and (max-width: 1199px){
-  .intro2 {
+  .Sintro {
     height: 60vh;
   }
-  .intro2 h1 {
+  .Sintro h1 {
     font-size: 7.5rem;
     line-height: 6.5rem;
   }
-	.intro2 p {
+	.Sintro p {
 	font-size: 1.5rem;
 }
 }
 /*--MD-------------------*/
 @media only screen and (min-width: 768px) and (max-width: 991px){
-  .intro2 {
+  .Sintro {
     height: 45h;
   }
-  .intro2 h1 {
+  .Sintro h1 {
     font-size: 8rem;
     line-height: 6.5rem;
   }
-	.intro2 p {
+	.Sintro p {
 	font-size: 2rem;
 }
 }
 /*--SM-------------------*/
 @media only screen and (min-width: 576px) and (max-width: 767px){
-  .intro2 {
+  .Sintro {
     height: 45vh;
   }
-  .intro2 h1 {
+  .Sintro h1 {
     font-size: 4rem;
     line-height: 4rem;
   }
-	.intro2 p {
+	.Sintro p {
 	font-size: 1.5rem;
 }
 }
 /*--XS-------------------*/
 @media only screen and (max-width: 575px){
-  .intro2 {
+  .Sintro {
     height: 45vh;
   }
-  .intro2 h1 {
+  .Sintro h1 {
     font-size: 4rem;
     line-height: 4rem;
   }
-	.intro2 p {
+	.Sintro p {
 	font-size: 1.2rem;
 }
 }
@@ -738,7 +833,7 @@ h1 {
   height: auto;
   padding-top: 0rem;
   padding-bottom: 0rem;
-	background: #faf1f0;
+	background: #fbf3f2;
   /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
   background-position: center center;
   background-repeat: no-repeat;
@@ -790,9 +885,9 @@ h1 {
   display: table;
   width: 100%;
   height: auto;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  background: #faf1f0;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background: #fbf3f2;
   /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
   background-position: center center;
   background-repeat: no-repeat;
@@ -812,7 +907,7 @@ font-family: 'Prompt', sans-serif;
     height: 65vh;
   }
   .jobintro h1 {
-    font-size: 4.5rem;
+    font-size: 7.5rem;
     line-height:6rem !important; 
   }
 	.jobintro p {
@@ -880,8 +975,8 @@ font-family: 'Prompt', sans-serif;
   width: 100%;
   height: auto;
   padding-top: 0rem; 	/* ระยะห่างขอบจากบน */
-  padding-bottom: 4rem; /* ระยะห่างขอบจากล่าง */
-  background: #faf1f0;	/* สีพื้นหลัง */
+  padding-bottom: 0rem; /* ระยะห่างขอบจากล่าง */
+  background: #fbf3f2;	/* สีพื้นหลัง */
   /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);*/
   background-position: center center;
   background-repeat: no-repeat;
@@ -933,7 +1028,7 @@ font-family: 'Prompt', sans-serif;
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-	background: #faf1f0;
+	background: #fbf3f2;
   /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
   background-position: center center;
   background-repeat: no-repeat;
@@ -1117,7 +1212,7 @@ font-family: 'Prompt', sans-serif;
 
 /*bg's timeline*/
 .bg-timeline{
-background: #faf1f0;  
+background: #fbf3f2;  
 }
 
 .welcome h1 .mb-1{
@@ -1234,7 +1329,7 @@ a{
 
 <body>
 <!-- ขอบนอกสุด --------------------------------------------------------------------------------------------------------------------------------->
-
+<div class="row">
 
 
 
@@ -1245,11 +1340,11 @@ a{
             <div class="container px-4 px-lg-5 text-center">
                 
                
-                    <h1 data-aos="fade-up" data-aos-duration="1500" class="mb-1">สาขาวิชาสารสนเทศศาสตร์และบรรณารักษศาสตร์</h1>
+                    <h1 data-aos="fade-up" data-aos-duration="1200" class="mb-1">สาขาวิชาสารสนเทศศาสตร์และบรรณารักษศาสตร์</h1>
 				<div>
-					<h2 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100" class="mb-1 fac">ภาควิชาบรรณารักษศาสตร์</h2>
+					<h2 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100" class="mb-1 fac">ภาควิชาบรรณารักษศาสตร์</h2>
 				</div>
-                <h3 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200" class="mb-1">คณะอักษรศาสตร์ มหาวิทยาลัยศิลปากร</h3>
+                <h3 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" class="mb-1">คณะอักษรศาสตร์ มหาวิทยาลัยศิลปากร</h3>
 
             </div>
 </header>
@@ -1290,17 +1385,17 @@ a{
 
 <!-- timeline intro-------------------------------------------------------------------------------------------------------------------------------->
 	
-<div id="timeline" class="intro">
+<div id="timeline" class="TLintro">
 	<!-- lg-none -->
 	<div class="container d-none d-lg-block">
 					<div class="row gx-5 align-items-center">
 						<div class="col-lg-4 order-lg-2">
-							<div data-aos="flip-left" data-aos-duration="1500" class="px-5"><img class="img-fluid" src="img/hierarchy.png" width="400" height="400" alt="..."/></div>
+							<div data-aos="flip-left" data-aos-duration="1250" class="px-5"><img class="img-fluid" src="img/hierarchy.png" width="400" height="400" alt="..."/></div>
 						</div>
 						<div class="col-lg-8 order-lg-1">
 							<div>
-								<h1 data-aos="zoom-out" data-aos-duration="1500">แผนผังรายวิชา<br>เป็นอย่างไร </h1>
-								<p data-aos="zoom-out" data-aos-duration="1500">เรามาดูกันดีกว่าว่า ในแต่ละเทอม จะต้องเรียนรายวิชาบังคับตัวไหนบ้าง
+								<h1 data-aos="fade-left" data-aos-duration="1200">แผนผังรายวิชา<br>เป็นอย่างไร </h1>
+								<p data-aos="fade-left" data-aos-duration="1200">เรามาดูกันดีกว่าว่า ในแต่ละเทอม จะต้องเรียนรายวิชาบังคับตัวไหนบ้าง
                                 และเราจะได้รับทักษะใดบ้าง เมื่อสำเร็จการเรียนในรายวิชานั้น ๆ แล้ว
                                 </p>
 							</div>
@@ -1821,18 +1916,18 @@ a{
 
 <!-- LifeStyle intro-------------------------------------------------------------------------------------------------------------------------------->
 	
-<div id="lifeintro"  class="intro">
+<div id="lifeintro"  class="Lintro">
 
 	<!-- lg- -->
 	<div class="container d-none d-lg-block">
 					<div class="row gx-5 align-items-center">
 						<div class="col-lg-4 order-lg-2">
-							<div class="px-5"><img data-aos="flip-left" data-aos-duration="1500" data-aos-delay="50" class="img-fluid rounded-circle" src="img/act2.png" width="900" height="900" alt="..."/></div>
+							<div class="px-5"><img data-aos="flip-left" data-aos-duration="1250" data-aos-delay="50" class="img-fluid rounded-circle" src="img/act2.png" width="900" height="900" alt="..."/></div>
 						</div>
 						<div class="col-lg-8 order-lg-1">
 							<div>
-								<h1 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="50" >ชีวิตในเอก<br> มีอะไร? </h1>
-								<p data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="50" >การใช้ชีวิตในเอกของเราก็ไม่ได้มีแค่เข้ามาเลคเชอร์อย่างเดียวนะ เมื่อเข้ามาแล้วจะมีรับน้องเพื่อกระชับสัมพันธ์กับเพื่อน ๆ และมีกิจกรรมของเอกนั่นคือห้องสมุดเคลื่อนที่ด้วย และก่อนที่ทุกคนจะขึ้นปี 4 ก็จะมีการฝึกงานในช่วงปิดเทอมหลังจบปี 3 ด้วย</p>
+								<h1 data-aos="fade-left" data-aos-duration="1200" data-aos-delay="50" >ชีวิตในเอก<br> มีอะไร? </h1>
+								<p data-aos="fade-left" data-aos-duration="1200" data-aos-delay="50" >การใช้ชีวิตในเอกของเราก็ไม่ได้มีแค่เข้ามาเลคเชอร์อย่างเดียวนะ เมื่อเข้ามาแล้วจะมีรับน้องเพื่อกระชับสัมพันธ์กับเพื่อน ๆ และมีกิจกรรมของเอกนั่นคือห้องสมุดเคลื่อนที่ด้วย และก่อนที่ทุกคนจะขึ้นปี 4 ก็จะมีการฝึกงานในช่วงปิดเทอมหลังจบปี 3 ด้วย</p>
 							</div>
 						</div>
 					</div>
@@ -1845,8 +1940,8 @@ a{
 						</div>
 						<div class="col-lg-8 order-lg-1">
 							<div >
-								<h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50" class="text-center">ชีวิตในเอก <br> มีอะไร? </h1>
-								<p data-aos=zoom-in" data-aos-duration="1000" data-aos-delay="50">การใช้ชีวิตในเอกของเราก็ไม่ได้มีแค่เข้ามาเลคเชอร์อย่างเดียวนะ เมื่อเข้ามาแล้วจะมีรับน้องเพื่อกระชับสัมพันธ์กับเพื่อน ๆ และมีกิจกรรมของเอกนั่นคือห้องสมุดเคลื่อนที่ด้วย และก่อนที่ทุกคนจะขึ้นปี 4 ก็จะมีการฝึกงานในช่วงปิดเทอมหลังจบปี 3 ด้วย</p>
+								<h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="50" class="text-center">ชีวิตในเอก <br> มีอะไร? </h1>
+								<p data-aos=fade-left" data-aos-duration="1000" data-aos-delay="50">การใช้ชีวิตในเอกของเราก็ไม่ได้มีแค่เข้ามาเลคเชอร์อย่างเดียวนะ เมื่อเข้ามาแล้วจะมีรับน้องเพื่อกระชับสัมพันธ์กับเพื่อน ๆ และมีกิจกรรมของเอกนั่นคือห้องสมุดเคลื่อนที่ด้วย และก่อนที่ทุกคนจะขึ้นปี 4 ก็จะมีการฝึกงานในช่วงปิดเทอมหลังจบปี 3 ด้วย</p>
 							</div>
 						</div>
 					</div>
@@ -1860,8 +1955,8 @@ a{
 				</div>
 				<div class="col-lg-8 order-lg-1">
 					<div >
-						<h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50" class="text-center">ชีวิตในเอก <br> มีอะไร? </h1>
-						<p data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50">การใช้ชีวิตในเอกของเราก็ไม่ได้มีแค่เข้ามาเลคเชอร์อย่างเดียวนะ เมื่อเข้ามาแล้วจะมีรับน้องเพื่อกระชับสัมพันธ์กับเพื่อน ๆ และมีกิจกรรมของเอกนั่นคือห้องสมุดเคลื่อนที่ด้วย และก่อนที่ทุกคนจะขึ้นปี 4 ก็จะมีการฝึกงานในช่วงปิดเทอมหลังจบปี 3 ด้วย</p>
+						<h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="50" class="text-center">ชีวิตในเอก <br> มีอะไร? </h1>
+						<p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="50">การใช้ชีวิตในเอกของเราก็ไม่ได้มีแค่เข้ามาเลคเชอร์อย่างเดียวนะ เมื่อเข้ามาแล้วจะมีรับน้องเพื่อกระชับสัมพันธ์กับเพื่อน ๆ และมีกิจกรรมของเอกนั่นคือห้องสมุดเคลื่อนที่ด้วย และก่อนที่ทุกคนจะขึ้นปี 4 ก็จะมีการฝึกงานในช่วงปิดเทอมหลังจบปี 3 ด้วย</p>
 					</div>
 				</div>
 			</div>
@@ -2089,16 +2184,16 @@ a{
 
 <!-- scholarship intro------------------------------------------------------------------------------------------------------>
 	
-<div class=" intro2">
+<div class=" Sintro">
 	<div class="container d-none d-lg-block">
 					<div class="row gx-5 align-items-center">
 						<div class="col-lg-5 order-lg-2">
-							<div class="p-5"><img data-aos="flip-left" data-aos-duration="1000" class="img-fluid rounded-circle" src="img/scholarship.png" width="400" height="400" alt="..." /></div>
+							<div class="p-5"><img data-aos="flip-left" data-aos-duration="1200" class="img-fluid rounded-circle" src="img/scholarship.png" width="400" height="400" alt="..." /></div>
 						</div>
 						<div class="col-lg-7 order-lg-1">
 							<div >
-								<h1 data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">ทุนคณะ<br>มีอะไรบ้าง?</h1>
-								<p data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">คณะอักษรศาสตร์ มหาวิทยาลัยศิลปากรของเรา มีทุนการศึกษามากมายเพื่อสนับสนุนและช่วยเหลือนักศึกษาของเรา
+								<h1 data-aos="fade-left" data-aos-duration="1200" data-aos-anchor-placement="center-bottom">ทุนคณะ<br>มีอะไรบ้าง?</h1>
+								<p data-aos="fade-left" data-aos-duration="1200" data-aos-anchor-placement="center-bottom">คณะอักษรศาสตร์ มหาวิทยาลัยศิลปากรของเรา มีทุนการศึกษามากมายเพื่อสนับสนุนและช่วยเหลือนักศึกษาของเรา
 									แต่นักศึกษาส่วนมาก ยังไม่ทราบว่ามีทุนเหล่านี้อยู่ด้วย 
 									ดังนั้น พวกเรามาดูกันซิว่า ทุนเหล่านั้น มีทุนอะไรกันบ้างน้าาา
 								</p>
@@ -2232,19 +2327,19 @@ a{
 <!-- อาชีพ ------------------------------------------------------------------------------------------>
 	
 <!-- เกริ่นอาชีพ -------->
-<div id="jobintro" class="container intro2">
+<div id="jobintro" class="jobintro">
 
 <!-- lg -->
-    <div data-aos="fade-up" data-aos-duration="1000" class="row d-none d-lg-block">
+    <div class="d-none d-lg-block">
 		<div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-5 order-lg-2">
-                        <div class="p-5"><img src="img/where.png" data-aos="flip-left" data-aos-duration="1000" class="img-fluid" width="300" height="300"></div>
+                        <div class="p-5"><img src="img/where.png" data-aos="flip-left" data-aos-duration="1200" class="img-fluid" width="300" height="300"></div>
                     </div>
                     <div class="col-lg-7 order-lg-1">
                         <div >
-                            <h1 data-aos="fade-up" data-aos-duration="1000" >เรียนจบแล้ว... <br> ไปไหน?</h1>
-                            <p data-aos="fade-up" data-aos-duration="1000" >ตามมาดูกันดีกว่าว่าหลังจากเรียนจบสาขาวิชาเอกนี้ไปแล้ว<br>
+                            <h1 data-aos="fade-right" data-aos-duration="1200" >เรียนจบแล้ว... <br> ไปไหน?</h1>
+                            <p data-aos="fade-right" data-aos-duration="1200" >ตามมาดูกันดีกว่าว่าหลังจากเรียนจบสาขาวิชาเอกนี้ไปแล้ว<br>
                                 เราสามารถนำความรู้ที่ได้รับจากการเรียนไปประกอบอาชีพใดได้บ้าง</p>
                         </div>
                     </div>
@@ -2253,16 +2348,16 @@ a{
     </div>
 
 <!-- md none -->
-	<div data-aos="fade-up" data-aos-duration="1000" class="row d-none d-md-block d-lg-none">
+	<div class="row d-none d-md-block d-lg-none">
 		<div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-5 order-lg-2">
-                        <div class="p-5 text-center"><img data-aos="flip-left" data-aos-duration="1000" src="img/where.png" class="img-fluid center"></div>
+                        <div class="p-5 text-center"><img data-aos="flip-left" data-aos-duration="1200" src="img/where.png" class="img-fluid center"></div>
                     </div>
                     <div class="col-lg-7 order-lg-1">
                         <div >
-                            <h1 class="text-center">เรียนจบแล้ว... <br>ไปไหน?</h1>
-                            <p>ตามมาดูกันดีกว่าว่าหลังจากเรียนจบสาขาวิชาเอกนี้ไปแล้ว<br>
+                            <h1 data-aos="fade-right" data-aos-duration="1200" class="text-center">เรียนจบแล้ว... <br>ไปไหน?</h1>
+                            <p data-aos="fade-right" data-aos-duration="1200" >ตามมาดูกันดีกว่าว่าหลังจากเรียนจบสาขาวิชาเอกนี้ไปแล้ว<br>
                                 เราสามารถนำความรู้ที่ได้รับจากการเรียนไปประกอบอาชีพใดได้บ้าง</p>
                         </div>
                     </div>
@@ -2275,12 +2370,12 @@ a{
 		<div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-5 order-lg-2">
-                        <div class="p-5"><img data-aos="flip-left" data-aos-duration="1000" src="img/where.png" class="img-fluid center"></div>
+                        <div class="p-5"><img data-aos="flip-left" data-aos-duration="1200" src="img/where.png" class="img-fluid center"></div>
                     </div>
                     <div class="col-lg-7 order-lg-1">
                         <div >
-                            <h1 class="text-center">เรียนจบแล้ว... <br>ไปไหน?</h1>
-                            <p>ตามมาดูกันดีกว่าว่าหลังจากเรียนจบสาขาวิชาเอกนี้ไปแล้ว<br>
+                            <h1 data-aos="fade-right" data-aos-duration="1200" class="text-center">เรียนจบแล้ว... <br>ไปไหน?</h1>
+                            <p data-aos="fade-right" data-aos-duration="1200">ตามมาดูกันดีกว่าว่าหลังจากเรียนจบสาขาวิชาเอกนี้ไปแล้ว<br>
                                 เราสามารถนำความรู้ที่ได้รับจากการเรียนไปประกอบอาชีพใดได้บ้าง</p>
                         </div>
                     </div>
@@ -2292,10 +2387,9 @@ a{
 
 <!-- ข้อความอาชีพ 1 ------------------->
 <div class="slidejob1">
-	<div data-aos="fade-up" data-aos-duration="1000" class="row">
+	<div data-aos="fade-up" data-aos-duration="1000">
 		<div class="container">
-			<div class="row">
-				<div class="col"><br>
+
 				<div class="row align-items-center">
 					<div class="col-md-4 text-center"><img src="img/book.png" class="zoom"
 						alt=""/> <h1>บรรณารักษ์</h1><h2>ในสถาบันบริการสารสนเทศหรือห้องสมุด<br>ทั้งของรัฐบาลและเอกชน</h2><br><br></div>
@@ -2304,31 +2398,22 @@ a{
 					<div class="col-md-4 text-center"><img src="img/database.png" class="zoom" alt="" /> <h1>ผู้จัดสร้างฐานข้อมูล</h1><h2>และผู้บันทึกข้อมูลของหน่วยงาน<br><br><br><br></h2></div> 
 				</div>	
 			</div>
-			</div>
-		</div>
   </div>
 	
   <!-- ข้อความอาชีพ 2 --------------------->
  
-	<div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" class="row">
+	<div data-aos="fade-up" data-aos-duration="1000">
 		<div class="container">
-			<div class="row">
-				<div class="col"><br>
 				<div class="row align-items-center">
 					<div class="col-md-4 text-center"><img src="img/archive.png" class="zoom" 
 						alt="" height="150 px" width="150 px"/> <h1>นักเอกสารจดหมายเหตุ</h1><h2>ของหน่วยงาน</h2></div>
 					<div class="col-md-4 text-center"><img src="img/data-service.png" class="zoom"
 						alt="" height="150 px" width="150 px"/> <h1>พนักงาน<br>ให้บริการข้อมูล</h1><h2>สารสนเทศเชิงพาณิชย์</h2></div>
 					<div class="col-md-4 text-center"><img src="img/web-programming.png" class="zoom"
-						alt="" height="150 px" width="150 px"/> <h1>อาชีพอื่น ๆ<br>ที่เกี่ยวข้อง</h1><h2>กับการจัดการและงานบริการสารสนเทศ เช่น ผู้ดูแลเว็บไซต์</h2></div> 
-					
-				</div>
-	
-			</div>
-			</div>
+						alt="" height="150 px" width="150 px"/> <h1>อาชีพอื่น ๆ<br>ที่เกี่ยวข้อง</h1><h2>กับการจัดการและงานบริการสารสนเทศ เช่น ผู้ดูแลเว็บไซต์</h2></div> 			
+				</div>	
 		</div>
   	</div>
-
 </div>
 
 
@@ -2342,20 +2427,20 @@ a{
 <!-- lg-none -->
 	<div class="container d-none d-lg-block">
 	  <div class="row">
-		  <div class="col-md-6 bg align-items-center"><img src="img/06.3.png" data-aos="flip-left" data-aos-duration="1000" class ="img-fluid" height="360 px" width="520 px"/> </div>
-		  <div class="col-md-6 bg">
+		  <div class="col-md-6 align-items-center"><img src="img/06.3.png" data-aos="flip-left" data-aos-duration="1200" class ="img-fluid" height="360 px" width="520 px"/> </div>
+		  <div class="col-md-6">
 			<div class="p-1">
-			  <div class="bg">
-				<h1 data-aos="fade-up" data-aos-duration="1000" >พบเจอปัญหาหนักใจ<br>ให้ติดต่อเรา</h1>
-				<div class="container">
-					<p data-aos="fade-up" data-aos-duration="1000" >มีเรื่องหนักใจ อยากปรึกษาหรือร้องเรียนกับทางภาควิชา<br> 
+			  <div data-aos="fade-right" data-aos-duration="1200">
+				<h1 >พบเจอปัญหาหนักใจ<br>ให้ติดต่อเรา</h1>
+				<div data-aos="fade-right" data-aos-duration="1200" class="container">
+					<p >มีเรื่องหนักใจ อยากปรึกษาหรือร้องเรียนกับทางภาควิชา<br> 
 					จิ้มที่ปุ่มด้านล่างเพื่อเข้าไปบอกเล่าเก้าสิบได้เลย</p>
 				  </div>
 			  </div>
 			</div>
 		<!-- btn -->
 				<div class="container center">
-					<button data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" type="button" class="btn btn-info center green-button">คลิก<br>เพื่อไปยังฟอร์ม</button>
+					<button data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100" type="button" class="btn btn-info center green-button">คลิก<br>เพื่อไปยังฟอร์ม</button>
 				</div>
 			</div>
 			</div>
@@ -2368,16 +2453,16 @@ a{
 		<div class="col-md-6 bg">
 		  <div class="p-1">
 			<div class="bg">
-			  <h1 data-aos="fade-up" data-aos-duration="1000" class="text-center">พบเจอปัญหาหนักใจ<br>ให้ติดต่อเรา</h1>
+			  <h1 data-aos="fade-left" data-aos-duration="1000" class="text-center">พบเจอปัญหาหนักใจ<br>ให้ติดต่อเรา</h1>
 			  <div class="container">
-				<p data-aos="fade-up" data-aos-duration="1000">มีเรื่องหนักใจ อยากปรึกษาหรือร้องเรียนกับทางภาควิชา<br> 
+				<p data-aos="fade-left" data-aos-duration="1000">มีเรื่องหนักใจ อยากปรึกษาหรือร้องเรียนกับทางภาควิชา<br> 
 				จิ้มที่ปุ่มด้านล่างเพื่อเข้าไปบอกเล่าเก้าสิบได้เลย</p>
 			  </div>
 			</div>
 		  </div>
 	  <!-- btn -->
       <div class="container center">
-        <button data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" type="button" class="btn btn-info center green-button">คลิก<br>เพื่อไปยังฟอร์ม</button>
+        <button data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100" type="button" class="btn btn-info center green-button">คลิก<br>เพื่อไปยังฟอร์ม</button>
         </div>
 			</div>
 			</div>
@@ -2422,7 +2507,7 @@ a{
 	</div>
 	<!-- Copyright -->
   </footer>
-
+</div>
 <!---------------------------------------------------------------------------------------------------------------------->	
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
 </script>
