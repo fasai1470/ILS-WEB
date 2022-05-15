@@ -23,7 +23,7 @@ h1 {
 /*Header ตกแต่งสไลด์ที่ 1 คือหน้า welcome*/
 
 .welcome {
-  min-height: 30rem;
+  min-height: 50rem;
   position: relative;
   display: table;
   width: 100%;
@@ -37,25 +37,19 @@ h1 {
   background-size: cover;
 }
 
-.welcome h1, .welcome .h1 {
+.welcome h1 {
   font-size: 3.6rem;
   color: #7cc4cb;
-  margin: 0;
-  padding: 0;
   line-height:2.5rem !important;
   
 }
-.welcome h2, .welcome .h2 {
+.welcome h2 {
   font-size: 2.5rem;
   color: #7cc4cbb0;
-  margin: 0;
-  padding: 0;
 }
-.welcome h3, .welcome .h3 {
+.welcome h3 {
   font-size: 2rem;
   color: #7cc4cbb3;
-  margin: 0;
-  padding: 0;
 }
 
 .fac{
@@ -66,18 +60,18 @@ h1 {
   /*--XL-------------------*/
   @media (min-width: 1200px) {
     .welcome {
-      height: 80vh;
+    height: 100vh;
     }
 
-    .welcome h1, .welcome .h1 {
+    .welcome h1 {
       font-size: 6rem;
       line-height:4.5rem !important;
       
     }
-    .welcome h2, .welcome .h2 {
+    .welcome h2 {
       font-size: 4.5rem;
     }
-    .welcome h3, .welcome .h3 {
+    .welcome h3 {
       font-size: 3rem;
     }
   }
@@ -85,20 +79,17 @@ h1 {
   }@media only screen and (min-width: 992px) and (max-width: 1199px){
 
     .welcome {
-      height: 80vh;
+      height: 100vh;
     }
-    .welcome h1, .welcome .h1 {
+    .welcome h1 {
       font-size: 6rem;
 
-      
     }
-    .welcome h2, .welcome .h2 {
+    .welcome h2 {
       font-size: 5.5rem;
-      color: #7cc4cbe7;
     }
-    .welcome h3, .welcome .h3 {
+    .welcome h3 {
       font-size: 3rem;
-      color: #7cc4cb;
     }
   }
   /*--MD-------------------*/
@@ -106,15 +97,15 @@ h1 {
     .welcome {
       height: 65vh;
     }
-    .welcome h1, .welcome .h1 {
+    .welcome h1 {
       font-size: 5.5rem;
       line-height:3.5rem !important;
       
     }
-    .welcome h2, .welcome .h2 {
+    .welcome h2 {
       font-size: 2.5rem;
     }
-    .welcome h3, .welcome .h3 {
+    .welcome h3 {
       font-size: 2rem;
     }
   }
@@ -124,15 +115,15 @@ h1 {
     .welcome {
       height: 65vh;
     }
-    .welcome h1, .welcome .h1 {
+    .welcome h1 {
       font-size: 3.5rem;
       line-height:2rem !important;
       
     }
-    .welcome h2, .welcome .h2 {
+    .welcome h2 {
       font-size: 2.5rem;
     }
-    .welcome h3, .welcome .h3 {
+    .welcome h3 {
       font-size: 2rem;
     }
   }
@@ -141,15 +132,14 @@ h1 {
     .welcome {
       height: 65vh;
     }
-    .welcome h1, .welcome .h1 {
+    .welcome h1 {
       font-size: 2.6rem;
       line-height:2rem !important;
-      
     }
-    .welcome h2, .welcome .h2 {
+    .welcome h2 {
       font-size: 1.8rem;
     }
-    .welcome h3, .welcome .h3 {
+    .welcome h3 {
       font-size: 1.2rem;
     }
   }
@@ -170,12 +160,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/*--XL-------------------*/
-@media (min-width: 1200px) {
-  .intro {
-    height: 65vh;
-  }
-  .intro h1, .intro .h1 {
+  .intro h1 {
     font-size: 7.5rem;
     line-height:6rem !important;
   
@@ -184,18 +169,33 @@ h1 {
 	font-size: 1.5rem;
   font-family: 'Prompt', sans-serif;
 }
+  
+}
+/*--XL-------------------*/
+@media (min-width: 1200px) {
+  .intro {
+    height: 65vh;
+  }
+  .intro h1 {
+    font-size: 7.5rem;
+    line-height:6rem !important;
+  
+  }
+	.intro p {
+	font-size: 1.5rem;
+}
 /*--LG-------------------*/
 }@media only screen and (min-width: 992px) and (max-width: 1199px){
   .intro {
     height: 65vh;
   }
-  .intro h1, .intro .h1 {
+  .intro h1 {
     font-size: 7.5rem;
     line-height:5.5rem !important;
   }
 	.intro p {
 	font-size: 1.5rem;
-  font-family: 'Prompt', sans-serif;
+
 }
 }
 /*--MD-------------------*/
@@ -203,14 +203,12 @@ h1 {
   .intro {
     height: 20vh;
   }
-  .intro h1, .intro .h1 {
+  .intro h1 {
     font-size: 8rem;
     line-height:6rem !important;
   }
 	.intro p {
 	font-size: 2rem;
-  font-family: 'Prompt', sans-serif;
-
 }
 }
 /*--SM-------------------*/
@@ -218,13 +216,12 @@ h1 {
   .intro {
     height: 50vh;
   }
-  .intro h1, .intro .h1 {
+  .intro h1 {
     font-size: 4rem;
     line-height:3.5rem !important;
   }
 	.intro p {
 	font-size: 1.5rem;
-  font-family: 'Prompt', sans-serif;
 }
 }
 /*--XS-------------------*/
@@ -232,13 +229,12 @@ h1 {
   .intro {
     height: 50vh;
   }
-  .intro h1, .intro .h1 {
+  .intro h1 {
     font-size: 4rem;
     line-height:3.5rem !important;
   }
 	.intro p {
 	font-size: 1.2rem;
-  font-family: 'Prompt', sans-serif;
 }
 }
 
@@ -260,7 +256,6 @@ h1 {
 .QA h1 {
   color: #7cc4cb;
 }
-
   /*--XL-------------------*/
 @media (min-width: 1200px) {
   .QA {
@@ -323,13 +318,11 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-  .slideQA h3, .slideQA .h3 {
-    font-size: 1.8rem;
+  .slideQA h3 {
     color: #007a6d;
     font-family: 'Prompt', sans-serif;
   }
-  .slideQA h4, .slideQA .h4 {
-    font-size: 1.5rem;
+  .slideQA h4 {
     color: #323237;
     font-family: 'Prompt', sans-serif;
   }
@@ -339,10 +332,10 @@ h1 {
   .slideQA {
     height: 100vh;
   }
-  .slideQA h3, .slideQA .h3 {
-    font-size: 2.0rem;
+  .slideQA h3 {
+    font-size: 2rem;
   }
-  .slideQA h4, .slideQA .h4 {
+  .slideQA h4 {
     font-size: 1.8rem;
   }
 }
@@ -351,10 +344,10 @@ h1 {
   .slideQA {
     height: 100vh;
   }
-  .slideQA h3, .slideQA .h3 {
+  .slideQA h3 {
     font-size: 1.8rem;
   }
-  .slideQA h4, .slideQA .h4 {
+  .slideQA h4 {
     font-size: 1.8rem;
   }
 }
@@ -363,10 +356,10 @@ h1 {
   .slideQA {
     height: 100vh;
   }
-  .slideQA h3, .slideQA .h3 {
+  .slideQA h3 {
     font-size: 2rem;
   }
-  .slideQA h4, .slideQA .h4 {
+  .slideQA h4 {
     font-size: 2rem;
   }
 }
@@ -375,10 +368,10 @@ h1 {
   .slideQA {
     height: 100vh;
   }
-  .slideQA h3, .slideQA .h3 {
+  .slideQA h3 {
     font-size: 1.3rem;
   }
-  .slideQA h4, .slideQA .h4 {
+  .slideQA h4 {
     font-size: 1.3rem;
   }
 }
@@ -387,10 +380,10 @@ h1 {
   .slideQA {
     height: 100vh;
   }
-  .slideQA h3, .slideQA .h3 {
+  .slideQA h3 {
     font-size: 1.3rem;
   }
-  .slideQA h4, .slideQA .h4 {
+  .slideQA h4 {
     font-size: 1.3rem;
   }
 }
@@ -418,7 +411,7 @@ h1 {
   .intro2 {
     height: 45vh;
   }
-  .intro2 h1, .intro2 .h1 {
+  .intro2 h1 {
     font-size: 7.5rem;
     line-height: 6.5rem;
   }
@@ -430,7 +423,7 @@ h1 {
   .intro2 {
     height: 45vh;
   }
-  .intro2 h1, .intro2 .h1 {
+  .intro2 h1 {
     font-size: 7.5rem;
     line-height: 6.5rem;
   }
@@ -443,7 +436,7 @@ h1 {
   .intro2 {
     height: 45h;
   }
-  .intro2 h1, .intro2 .h1 {
+  .intro2 h1 {
     font-size: 8rem;
     line-height: 6.5rem;
   }
@@ -456,7 +449,7 @@ h1 {
   .intro2 {
     height: 45vh;
   }
-  .intro2 h1, .intro2 .h1 {
+  .intro2 h1 {
     font-size: 4rem;
     line-height: 4rem;
   }
@@ -469,7 +462,7 @@ h1 {
   .intro2 {
     height: 45vh;
   }
-  .intro2 h1, .intro2 .h1 {
+  .intro2 h1 {
     font-size: 4rem;
     line-height: 4rem;
   }
@@ -492,17 +485,17 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.slidescholar h1, .slidescholar .h1 {
+.slidescholar h1 {
   font-size: 6rem;
 	color: #000000
 
 }
-.slidescholar h2, .slidescholar .h2 {
+.slidescholar h2 {
   font-size: 5rem;
 	color: #000000
 
 }
-.slidescholar h3, .slidescholar .h3 {
+.slidescholar h3 {
   font-size: 1.8rem;
 	color: #000000
 
@@ -515,20 +508,18 @@ h1 {
   .slidescholar {
     height: 60vh;
   }
-  .slidescholar h1, .slidescholar .h1 {
+  .slidescholar h1 {
     font-size: 6.5rem;
   }
-	.slidescholar h2, .slidescholar .h2 {
+	.slidescholar h2 {
     font-size: 5.5rem;
   }
-	.slidescholar h3, .slidescholar .h3 {
+	.slidescholar h3 {
     color: #000000
     font-size: 1.8rem;
   }
 	.slidescholar p {
 	font-size: 2rem;
-  margin: 0;
-  padding-top: 0rem;
 }
 }
 
@@ -548,7 +539,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.jobintro h1, .jobintro .h1 {
+.jobintro h1 {
   color: #7cc4cb;
 }
 .jobintro p {
@@ -561,7 +552,7 @@ font-family: 'Prompt', sans-serif;
   .jobintro {
     height: 65vh;
   }
-  .jobintro h1, .jobintro .h1 {
+  .jobintro h1 {
     font-size: 4.5rem;
     line-height:6rem !important; 
   }
@@ -574,7 +565,7 @@ font-family: 'Prompt', sans-serif;
   .jobintro {
     height: 65vh;
   }
-  .jobintro h1, .jobintro .h1 {
+  .jobintro h1 {
     font-size: 7.5rem;
     line-height:5.5rem !important;
   }
@@ -587,7 +578,7 @@ font-family: 'Prompt', sans-serif;
   .jobintro {
     height: 20vh;
   }
-  .jobintro h1, .jobintro .h1 {
+  .jobintro h1 {
     font-size: 6rem;
     line-height:6rem !important;
   }
@@ -600,7 +591,7 @@ font-family: 'Prompt', sans-serif;
   .jobintro {
     height: 50vh;
   }
-  .jobintro h1, .jobintro .h1 {
+  .jobintro h1 {
     font-size: 4rem;
     line-height:5.5rem !important;
   }
@@ -613,7 +604,7 @@ font-family: 'Prompt', sans-serif;
   .jobintro {
     height: 50vh;
   }
-  .jobintro h1, .jobintro .h1 {
+  .jobintro h1 {
     font-size: 4rem;
     line-height:4.5rem !important;
   }
@@ -640,36 +631,30 @@ font-family: 'Prompt', sans-serif;
 
 /* หัวเรื่อง1 ภายในสไลด์อาชีพ1 */
 
-.slidejob1 h1, .slidejob .h1 {
+.slidejob1 h1 {
   font-size: 3rem;
 	/*color: #7cc4cb;*/
-  margin: 0;
-  padding: 0;
 }
-.slidejob1 h2, .slidejob .h2 {
+.slidejob1 h2 {
   font-size: 1.8rem;
 	/*color: #7cc4cb;*/
-  margin: 0;
-  padding: 0;
 }
 
 /* พารากราฟ ภายในสไลด์อาชีพ1 */
-.slidejob1 p, .slidejob .p {
+.slidejob1 p {
   font-size: 1.2rem;
-  margin: 0;
-  padding: 0;
 }
 @media (min-width: 992px) {
   .slidejob1 {
     height: 100vh;
   }
-  .slidejob1 h1, .slidejob1 .h1 {
+  .slidejob1 h1 {
     font-size: 3rem;
   }
-	.slidejob1 h2, .slidejob1 .h2 {
+	.slidejob1 h2 {
     font-size: 1.8rem;
   }
-	.slidejob1 h3, .slidejob1 .h3 {
+	.slidejob1 h3 {
     color: #000000
     font-size: 1.8rem;
   }
@@ -696,10 +681,10 @@ font-family: 'Prompt', sans-serif;
   background-size: cover;
 }
 
-.intro3 h1, .intro3 .h1 {
+.intro3 h1 {
   color: #7cc4cb;
 }
-.intro3 p, .intro3 .p {
+.intro3 p {
   color: #000000;
   font-family: 'Prompt', sans-serif;
 }
@@ -709,10 +694,10 @@ font-family: 'Prompt', sans-serif;
   .intro3 {
     height: 60vh;
   }
-  .intro3 h1, .intro3 .h1 {
+  .intro3 h1 {
     font-size: 4rem;
   }
-  .intro3 p, .intro3 .p {
+  .intro3 p {
     font-size: 3rem;
   }
 }
@@ -721,10 +706,10 @@ font-family: 'Prompt', sans-serif;
   .intro3 {
     height: 60vh;
   }
-  .intro3 h1, .intro3 .h1 {
+  .intro3 h1 {
     font-size: 4rem;
   }
-  .intro3 p, .intro3 .p {
+  .intro3 p {
     font-size: 3rem;
   }
 }
@@ -733,10 +718,10 @@ font-family: 'Prompt', sans-serif;
   .intro3 {
     height: 50h;
   }
-  .intro3 h1, .intro3 .h1 {
+  .intro3 h1 {
     font-size: 3rem;
   }
-  .intro3 p, .intro3 .p {
+  .intro3 p {
     font-size: 1.5rem;
   }
 }
@@ -745,11 +730,11 @@ font-family: 'Prompt', sans-serif;
   .intro3 {
     height: 50vh;
   }
-  .intro3 h1, .intro3 .h1 {
+  .intro3 h1 {
     font-size: 2.5rem;
     line-height: 4.5rem;
   }
-  .intro3 p, .intro3 .p {
+  .intro3 p {
     font-size: 1.2rem;
   }
 }
@@ -758,11 +743,11 @@ font-family: 'Prompt', sans-serif;
   .intro3 {
     height: 50vh;
   }
-  .intro3 h1, .intro3 .h1 {
+  .intro3 h1 {
     font-size: 2rem;
     line-height: 4rem;
   }
-  .intro3 p, .intro3 .p {
+  .intro3 padding-left: ; {
     font-size: 1.2rem;
   }
 }
@@ -784,11 +769,16 @@ font-family: 'Prompt', sans-serif;
 
 .timeline1 p {
   color: rgb(129, 129, 129);
+  font-family:'Prompt', sans-serif;
 }
 .timeline1 h6 {
   color: #0d864b;
+  font-family: "Circular";
 }
-
+.timeline1 h5 {
+  font-size: 1.5rem;
+  font-family: "Circular";
+}
 
 /*--XL-------------------*/
 @media (min-width: 1200px) {
@@ -797,15 +787,12 @@ font-family: 'Prompt', sans-serif;
   }
   .timeline1 p {
     font-size: 2rem;
-    font-family:'Prompt', sans-serif;
   }
   .timeline1 h6 {
     font-size: 1.5rem;
-    font-family: "Circular";
   }
   .timeline1 h5 {
     font-size: 1.5rem;
-    font-family: "Circular";
   }
 }
 /*--LG-------------------*/
@@ -813,17 +800,14 @@ font-family: 'Prompt', sans-serif;
   .timeline1 {
     height: 50vh;
   }
-  .timeline1 p, .timeline1 .p {
+  .timeline1 p {
     font-size: 2rem;
-    font-family:'Prompt', sans-serif;
   }
-  .timeline1 h6, .timeline1 .h6 {
+  .timeline1 h6 {
     font-size: 3.2rem;
-    font-family: "Circular";
   }
-  .timeline1 h5, .timeline1 .h5 {
+  .timeline1 h5 {
     font-size: 1.5rem;
-    font-family: "Circular";
   }
 }
 /*--MD-------------------*/
@@ -831,17 +815,14 @@ font-family: 'Prompt', sans-serif;
   .timeline1 {
     height: 50h;
   }
-  .timeline1 a, .timeline1 .a {
+  .timeline1 p {
     font-size: 1.5rem;
-    font-family:'Prompt', sans-serif;
   }
-  .timeline1 h6, .timeline1.h6 {
+  .timeline1 h6 {
     font-size: 1.5rem;
-    font-family: "Circular";
   }
-  .timeline1 h5, .timeline1 .h5 {
+  .timeline1 h5 {
     font-size: 1.5rem;
-    font-family: "Circular";
   }
 }
 /*--SM-------------------*/
@@ -849,17 +830,14 @@ font-family: 'Prompt', sans-serif;
   .timeline1 {
     height: 50vh;
   }
-  .timeline1 p, .timeline1 .p {
+  .timeline1 p {
     font-size: 1rem;
-    font-family:'Prompt', sans-serif;
   }
-  .timeline1 h6, .timeline1 .h6 {
+  .timeline1 h6 {
     font-size: 1rem;
-    font-family: "Circular";
   }
-  .timeline1 h5, .timeline1 .h5 {
+  .timeline1 h5 {
     font-size: 1rem;
-    font-family: "Circular";
   }
 }
 /*--XS-------------------*/
@@ -867,17 +845,14 @@ font-family: 'Prompt', sans-serif;
   .timeline1 {
     height: 50vh;
   }
-  .timeline1 a, .timeline1 .a {
+  .timeline1 p {
     font-size: 1rem;
-    font-family:'Prompt', sans-serif;
   }
-  .timeline1 h6, .timeline1 .h6 {
+  .timeline1 h6 {
     font-size: 1.2rem;
-    font-family: "Circular";
   }
-  .timeline1 h5, .timeline1 .h5 {
+  .timeline1 h5 {
     font-size: 1.2rem;
-    font-family: "Circular";
   }
 }
 
