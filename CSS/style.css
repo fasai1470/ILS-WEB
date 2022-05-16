@@ -1,0 +1,970 @@
+@charset "utf-8";
+/* CSS Document */
+
+.art   {color: #7cc4cb;} 		/*สีตัวอักษร ฟ้า*/
+.bg{ background: #faf1f0;} 		/*สีพื้นหลัง เนื้อ*/
+.bgsu{ background: #007a6d;} 	/*สีพื้นหลัง มหาวิทยาลัย*/
+
+
+/* ขนาดตัวอักษรเนวิเกชั่นบาร์ */
+.nav1{
+	font-size: 1.3rem;
+	color: white;
+}
+
+/* หัวเรื่อง 1 */
+h1 {
+	font-size:2.91em;
+	margin:0;
+	color: #7cc4cb;
+	}
+
+
+/*Header ตกแต่งสไลด์ที่ 1 คือหน้า welcome*/
+
+.welcome {
+  min-height: 50rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+	background: #faf1f0;
+  /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome h1 {
+  font-size: 3.6rem;
+  color: #7cc4cb;
+  line-height:2.5rem !important;
+  
+}
+.welcome h2 {
+  font-size: 2.5rem;
+  color: #7cc4cbb0;
+}
+.welcome h3 {
+  font-size: 2rem;
+  color: #7cc4cbb3;
+}
+
+.fac{
+	line-height: 53px;
+}
+
+
+  /*--XL-------------------*/
+  @media (min-width: 1200px) {
+    .welcome {
+    height: 100vh;
+    }
+
+    .welcome h1 {
+      font-size: 6rem;
+      line-height:4.5rem !important;
+      
+    }
+    .welcome h2 {
+      font-size: 4.5rem;
+    }
+    .welcome h3 {
+      font-size: 3rem;
+    }
+  }
+  /*--LG-------------------*/
+  }@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+    .welcome {
+      height: 100vh;
+    }
+    .welcome h1 {
+      font-size: 6rem;
+
+    }
+    .welcome h2 {
+      font-size: 5.5rem;
+    }
+    .welcome h3 {
+      font-size: 3rem;
+    }
+  }
+  /*--MD-------------------*/
+  @media only screen and (min-width: 768px) and (max-width: 991px){
+    .welcome {
+      height: 65vh;
+    }
+    .welcome h1 {
+      font-size: 5.5rem;
+      line-height:3.5rem !important;
+      
+    }
+    .welcome h2 {
+      font-size: 2.5rem;
+    }
+    .welcome h3 {
+      font-size: 2rem;
+    }
+  }
+  /*--SM-------------------*/
+  @media only screen and (min-width: 576px) and (max-width: 767px){
+
+    .welcome {
+      height: 65vh;
+    }
+    .welcome h1 {
+      font-size: 3.5rem;
+      line-height:2rem !important;
+      
+    }
+    .welcome h2 {
+      font-size: 2.5rem;
+    }
+    .welcome h3 {
+      font-size: 2rem;
+    }
+  }
+  /*--XS-------------------*/
+  @media only screen and (max-width: 575px){
+    .welcome {
+      height: 65vh;
+    }
+    .welcome h1 {
+      font-size: 2.6rem;
+      line-height:2rem !important;
+    }
+    .welcome h2 {
+      font-size: 1.8rem;
+    }
+    .welcome h3 {
+      font-size: 1.2rem;
+    }
+  }
+
+/*-- Lifestyleintro ตกแต่งหัวข้อ------------------------------------*/
+
+.intro {
+  min-height: 20rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 12rem;
+  padding-bottom: 0rem;
+	background: #faf1f0;
+  /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  .intro h1 {
+    font-size: 7.5rem;
+    line-height:6rem !important;
+  
+  }
+	.intro p {
+	font-size: 1.5rem;
+  font-family: 'Prompt', sans-serif;
+}
+  
+}
+/*--XL-------------------*/
+@media (min-width: 1200px) {
+  .intro {
+    height: 65vh;
+  }
+  .intro h1 {
+    font-size: 7.5rem;
+    line-height:6rem !important;
+  
+  }
+	.intro p {
+	font-size: 1.5rem;
+}
+/*--LG-------------------*/
+}@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .intro {
+    height: 65vh;
+  }
+  .intro h1 {
+    font-size: 7.5rem;
+    line-height:5.5rem !important;
+  }
+	.intro p {
+	font-size: 1.5rem;
+
+}
+}
+/*--MD-------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .intro {
+    height: 20vh;
+  }
+  .intro h1 {
+    font-size: 8rem;
+    line-height:6rem !important;
+  }
+	.intro p {
+	font-size: 2rem;
+}
+}
+/*--SM-------------------*/
+@media only screen and (min-width: 576px) and (max-width: 767px){
+  .intro {
+    height: 50vh;
+  }
+  .intro h1 {
+    font-size: 4rem;
+    line-height:3.5rem !important;
+  }
+	.intro p {
+	font-size: 1.5rem;
+}
+}
+/*--XS-------------------*/
+@media only screen and (max-width: 575px){
+  .intro {
+    height: 50vh;
+  }
+  .intro h1 {
+    font-size: 4rem;
+    line-height:3.5rem !important;
+  }
+	.intro p {
+	font-size: 1.2rem;
+}
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+.QA {
+  min-height: 10rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 4.5rem;
+  padding-bottom: 0rem;
+  background: #faf1f0;
+  /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.QA h1 {
+  color: #7cc4cb;
+}
+  /*--XL-------------------*/
+@media (min-width: 1200px) {
+  .QA {
+    height: 5vh;
+  }
+  .QA h1 {
+    font-size: 100px;
+  }
+}
+/*--LG-------------------*/
+}@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .QA {
+    height: 5vh;
+  }
+  .QA h1 {
+    font-size: 100px;
+  }
+}
+/*--MD-------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .QA {
+    height: 5vh;
+  }
+  .QA h1 {
+    font-size: 100px;
+  }
+}
+/*--SM-------------------*/
+@media only screen and (min-width: 576px) and (max-width: 767px){
+  .QA {
+    height: 5vh;
+  }
+  .QA h1 {
+    font-size: 75px;
+  }
+}
+/*--XS-------------------*/
+@media only screen and (max-width: 575px){
+  .QA {
+    height: 5vh;
+  }
+  .QA h1 {
+    font-size: 75px;
+  }
+}
+
+/*--slide ตกแต่งสไลด์QA------------------------------------------------------------------------------------------------------------------*/
+
+.slideQA {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+	background: #faf1f0;
+  /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  .slideQA h3 {
+    color: #007a6d;
+    font-family: 'Prompt', sans-serif;
+  }
+  .slideQA h4 {
+    color: #323237;
+    font-family: 'Prompt', sans-serif;
+  }
+
+/*--XL-------------------*/
+@media (min-width: 1200px) {
+  .slideQA {
+    height: 100vh;
+  }
+  .slideQA h3 {
+    font-size: 2rem;
+  }
+  .slideQA h4 {
+    font-size: 1.8rem;
+  }
+}
+/*--LG-------------------*/
+}@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .slideQA {
+    height: 100vh;
+  }
+  .slideQA h3 {
+    font-size: 1.8rem;
+  }
+  .slideQA h4 {
+    font-size: 1.8rem;
+  }
+}
+/*--MD-------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .slideQA {
+    height: 100vh;
+  }
+  .slideQA h3 {
+    font-size: 2rem;
+  }
+  .slideQA h4 {
+    font-size: 2rem;
+  }
+}
+/*--SM-------------------*/
+@media only screen and (min-width: 576px) and (max-width: 767px){
+  .slideQA {
+    height: 100vh;
+  }
+  .slideQA h3 {
+    font-size: 1.3rem;
+  }
+  .slideQA h4 {
+    font-size: 1.3rem;
+  }
+}
+/*--XS-------------------*/
+@media only screen and (max-width: 575px){
+  .slideQA {
+    height: 100vh;
+  }
+  .slideQA h3 {
+    font-size: 1.3rem;
+  }
+  .slideQA h4 {
+    font-size: 1.3rem;
+  }
+}
+/*--Scholarship----------------------------------------------------------------------------------------------------------*/
+.intro2 {
+  min-height: 20rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 6rem;
+  padding-bottom: 0rem;
+	background: #faf1f0;
+  /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro2 p {
+  font-family: 'Prompt', sans-serif;
+}
+
+/*--XL-------------------*/
+@media (min-width: 1200px) {
+  .intro2 {
+    height: 45vh;
+  }
+  .intro2 h1 {
+    font-size: 7.5rem;
+    line-height: 6.5rem;
+  }
+	.intro2 p {
+	font-size: 1.5rem;
+}
+/*--LG-------------------*/
+}@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .intro2 {
+    height: 45vh;
+  }
+  .intro2 h1 {
+    font-size: 7.5rem;
+    line-height: 6.5rem;
+  }
+	.intro2 p {
+	font-size: 1.5rem;
+}
+}
+/*--MD-------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .intro2 {
+    height: 45h;
+  }
+  .intro2 h1 {
+    font-size: 8rem;
+    line-height: 6.5rem;
+  }
+	.intro2 p {
+	font-size: 2rem;
+}
+}
+/*--SM-------------------*/
+@media only screen and (min-width: 576px) and (max-width: 767px){
+  .intro2 {
+    height: 45vh;
+  }
+  .intro2 h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+	.intro2 p {
+	font-size: 1.5rem;
+}
+}
+/*--XS-------------------*/
+@media only screen and (max-width: 575px){
+  .intro2 {
+    height: 45vh;
+  }
+  .intro2 h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+	.intro2 p {
+	font-size: 1.2rem;
+}
+}
+
+.slidescholar {
+  min-height: 10rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+	background: #faf1f0;
+  /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slidescholar h1 {
+  font-size: 6rem;
+	color: #000000
+
+}
+.slidescholar h2 {
+  font-size: 5rem;
+	color: #000000
+
+}
+.slidescholar h3 {
+  font-size: 1.8rem;
+	color: #000000
+
+}
+.slidescholar p {
+	font-size: 2rem;
+  color: #000000
+}
+@media (min-width: 992px) {
+  .slidescholar {
+    height: 60vh;
+  }
+  .slidescholar h1 {
+    font-size: 6.5rem;
+  }
+	.slidescholar h2 {
+    font-size: 5.5rem;
+  }
+	.slidescholar h3 {
+    color: #000000
+    font-size: 1.8rem;
+  }
+	.slidescholar p {
+	font-size: 2rem;
+}
+}
+
+/*-- ตกแต่งสไลด์อาชีพ---------------------------------------------------------------*/
+
+.jobintro {
+  min-height: 20rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background: #faf1f0;
+  /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.jobintro h1 {
+  color: #7cc4cb;
+}
+.jobintro p {
+font-family: 'Prompt', sans-serif;
+}
+
+
+/*--XL-------------------*/
+@media (min-width: 1200px) {
+  .jobintro {
+    height: 65vh;
+  }
+  .jobintro h1 {
+    font-size: 4.5rem;
+    line-height:6rem !important; 
+  }
+	.jobintro p {
+	font-size: 1.5rem;
+}
+
+/*--LG-------------------*/
+}@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .jobintro {
+    height: 65vh;
+  }
+  .jobintro h1 {
+    font-size: 7.5rem;
+    line-height:5.5rem !important;
+  }
+	.jobintro p {
+	font-size: 1.5rem;
+}
+}
+/*--MD-------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .jobintro {
+    height: 20vh;
+  }
+  .jobintro h1 {
+    font-size: 6rem;
+    line-height:6rem !important;
+  }
+	.jobintro p {
+	font-size: 2rem;
+}
+}
+/*--SM-------------------*/
+@media only screen and (min-width: 576px) and (max-width: 767px){
+  .jobintro {
+    height: 50vh;
+  }
+  .jobintro h1 {
+    font-size: 4rem;
+    line-height:5.5rem !important;
+  }
+	.jobintro p {
+	font-size: 1.5rem;
+}
+}
+/*--XS-------------------*/
+@media only screen and (max-width: 575px){
+  .jobintro {
+    height: 50vh;
+  }
+  .jobintro h1 {
+    font-size: 4rem;
+    line-height:4.5rem !important;
+  }
+	.jobintro p {
+	font-size: 1.2rem;
+}
+}
+
+/* หัวเรื่อง1 ภายในสไลด์อาชีพ1 */
+.slidejob1 {
+  min-height: 25rem; 	/* ความสูงสไลด์ */
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 0rem; 	/* ระยะห่างขอบจากบน */
+  padding-bottom: 4rem; /* ระยะห่างขอบจากล่าง */
+  background: #faf1f0;	/* สีพื้นหลัง */
+  /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* หัวเรื่อง1 ภายในสไลด์อาชีพ1 */
+
+.slidejob1 h1 {
+  font-size: 3rem;
+	/*color: #7cc4cb;*/
+}
+.slidejob1 h2 {
+  font-size: 1.8rem;
+	/*color: #7cc4cb;*/
+}
+
+/* พารากราฟ ภายในสไลด์อาชีพ1 */
+.slidejob1 p {
+  font-size: 1.2rem;
+}
+@media (min-width: 992px) {
+  .slidejob1 {
+    height: 100vh;
+  }
+  .slidejob1 h1 {
+    font-size: 3rem;
+  }
+	.slidejob1 h2 {
+    font-size: 1.8rem;
+  }
+	.slidejob1 h3 {
+    color: #000000
+    font-size: 1.8rem;
+  }
+	.slidejob1 p {
+	font-size: 2rem;
+  margin: 0;
+  padding-top: 0rem;
+}
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+.intro3 {
+  min-height: 20rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+	background: #faf1f0;
+  /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro3 h1 {
+  color: #7cc4cb;
+}
+.intro3 p {
+  color: #000000;
+  font-family: 'Prompt', sans-serif;
+}
+
+/*--XL-------------------*/
+@media (min-width: 1200px) {
+  .intro3 {
+    height: 60vh;
+  }
+  .intro3 h1 {
+    font-size: 4rem;
+  }
+  .intro3 p {
+    font-size: 3rem;
+  }
+}
+/*--LG-------------------*/
+}@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .intro3 {
+    height: 60vh;
+  }
+  .intro3 h1 {
+    font-size: 4rem;
+  }
+  .intro3 p {
+    font-size: 3rem;
+  }
+}
+/*--MD-------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .intro3 {
+    height: 50h;
+  }
+  .intro3 h1 {
+    font-size: 3rem;
+  }
+  .intro3 p {
+    font-size: 1.5rem;
+  }
+}
+/*--SM-------------------*/
+@media only screen and (min-width: 576px) and (max-width: 767px){
+  .intro3 {
+    height: 50vh;
+  }
+  .intro3 h1 {
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+  }
+  .intro3 p {
+    font-size: 1.2rem;
+  }
+}
+/*--XS-------------------*/
+@media only screen and (max-width: 575px){
+  .intro3 {
+    height: 50vh;
+  }
+  .intro3 h1 {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+  .intro3 padding-left: ; {
+    font-size: 1.2rem;
+  }
+}
+/*---------------------------------------------------------------------------------------------*/
+.timeline1 {
+  min-height: 20rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+	/*background: #faf1f0;*/
+  /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.timeline1 p {
+  color: rgb(129, 129, 129);
+  font-family:'Prompt', sans-serif;
+}
+.timeline1 h6 {
+  color: #0d864b;
+  font-family: "Circular";
+}
+.timeline1 h5 {
+  font-size: 1.5rem;
+  font-family: "Circular";
+}
+
+/*--XL-------------------*/
+@media (min-width: 1200px) {
+  .timeline1 {
+    height: 50vh;
+  }
+  .timeline1 p {
+    font-size: 2rem;
+  }
+  .timeline1 h6 {
+    font-size: 1.5rem;
+  }
+  .timeline1 h5 {
+    font-size: 1.5rem;
+  }
+}
+/*--LG-------------------*/
+}@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .timeline1 {
+    height: 50vh;
+  }
+  .timeline1 p {
+    font-size: 2rem;
+  }
+  .timeline1 h6 {
+    font-size: 3.2rem;
+  }
+  .timeline1 h5 {
+    font-size: 1.5rem;
+  }
+}
+/*--MD-------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .timeline1 {
+    height: 50h;
+  }
+  .timeline1 p {
+    font-size: 1.5rem;
+  }
+  .timeline1 h6 {
+    font-size: 1.5rem;
+  }
+  .timeline1 h5 {
+    font-size: 1.5rem;
+  }
+}
+/*--SM-------------------*/
+@media only screen and (min-width: 576px) and (max-width: 767px){
+  .timeline1 {
+    height: 50vh;
+  }
+  .timeline1 p {
+    font-size: 1rem;
+  }
+  .timeline1 h6 {
+    font-size: 1rem;
+  }
+  .timeline1 h5 {
+    font-size: 1rem;
+  }
+}
+/*--XS-------------------*/
+@media only screen and (max-width: 575px){
+  .timeline1 {
+    height: 50vh;
+  }
+  .timeline1 p {
+    font-size: 1rem;
+  }
+  .timeline1 h6 {
+    font-size: 1.2rem;
+  }
+  .timeline1 h5 {
+    font-size: 1.2rem;
+  }
+}
+
+/*bg's timeline*/
+.bg-timeline{
+background: #faf1f0;  
+}
+
+.welcome h1 .mb-1{
+line-height : 1.3350px; 
+
+}
+
+#imgoc {
+  border-radius: 100%;
+  border-style: solid;
+  border-color: black;
+}
+
+/*ไทม์ไลน์ของรายวิชา*/
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+.year-section {
+  margin: 50px auto;
+  color: #b4f8d7;
+  font-size: 1.8em;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+.year-section a {
+  font-weight: 700;
+  color: rgb(230, 230, 230);
+}
+.year-section .year {
+  color: #0d864b;
+  font-weight: 400;
+  font-family: "Circular";
+  font-size: 50px;
+}
+.year-section .big {
+  font-family:'Prompt', sans-serif;
+  font-size: 25px;
+  color: #eee;
+  font-weight: 100;
+  margin-bottom: .5em;
+}
+.year-section .aside {
+  font-size: smaller;
+  border-left: 2px solid #0d864b;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  font-weight: 300;
+}
+.year-section ul {
+  list-style: circle;
+}
+
+a{
+	text-decoration-style: dotted;
+	text-decoration-color: #faf1f0;
+}
+/*ตรงรูปภาพที่มันซูมเด่นขึ้นมา */
+.zoom {
+  padding: 50px;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+/* ปุ่มฟอร์ม */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+/*คลุมดำตัวอักษรแล้วเปลี่ยนสี*/
+::-moz-selection { 
+  color: #f7a62e;
+  background: #7cc4cb ;
+}
+
+::selection {
+  color: #f7a62e;
+  background: #7cc4cb;
+}
+/*ตัวอักษรตรงอาชีพ*/
+#form p{
+	font-size: 24px;
+	font-family: 'Prompt', sans-serif;
+}
+#form h1{
+	font-size: 64px;
+	font-family: "Circular";
+}
+
+/*fade*/
+.tag {
+}
+
+.tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
